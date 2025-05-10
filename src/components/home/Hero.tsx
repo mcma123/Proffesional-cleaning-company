@@ -1,0 +1,66 @@
+
+import React, { useState, useEffect } from 'react';
+import { Button } from '@/components/ui/button';
+import { ArrowDown } from 'lucide-react';
+
+export const Hero = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    // Animation delay
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 100);
+    return () => clearTimeout(timer);
+  }, []);
+
+  return (
+    <div className="relative h-screen w-full overflow-hidden">
+      {/* Video Background */}
+      <div className="absolute inset-0">
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/30 z-10"></div>
+        <video
+          autoPlay
+          muted
+          loop
+          className="w-full h-full object-cover"
+          poster="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5"
+        >
+          <source src="https://player.vimeo.com/progressive_redirect/playback/521741387/rendition/1080p/file.mp4?loc=external" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      {/* Hero Content */}
+      <div className="relative z-20 h-full flex items-center">
+        <div className="container mx-auto px-4">
+          <div 
+            className={`max-w-3xl glass-dark p-8 rounded-2xl transition-all duration-1000 ease-out transform ${
+              isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+            }`}
+          >
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+              The <span className="text-gradient">Future</span> of Clean
+            </h1>
+            <p className="text-xl text-gray-200 mb-8">
+              Professional cleaning services with cutting-edge technology and eco-friendly solutions. Experience the difference with our expert team.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button className="bg-clean-green-500 hover:bg-clean-green-600 text-white px-8 py-6 text-lg rounded-xl hover-float">
+                Book Now
+              </Button>
+              <Button variant="outline" className="border-white text-white hover:bg-white/10 px-8 py-6 text-lg rounded-xl">
+                Our Services
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 animate-float">
+        <ArrowDown className="h-10 w-10 text-white" />
+      </div>
+    </div>
+  );
+};
