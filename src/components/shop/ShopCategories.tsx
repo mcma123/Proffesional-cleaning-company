@@ -2,13 +2,13 @@
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from 'framer-motion';
-import { Spray, Trash2, Droplets, ShoppingCart } from 'lucide-react';
+import { SprayCan, Trash2, Droplets, ShoppingCart } from 'lucide-react';
 
 const categories = [
   {
     id: 'all-purpose',
     name: 'All-Purpose Cleaners',
-    icon: <Spray className="h-8 w-8 text-clean-green-500" />,
+    icon: <SprayCan className="h-8 w-8 text-clean-green-500" />,
     description: 'Versatile cleaners for multiple surfaces',
     image: 'https://images.unsplash.com/photo-1563453392212-326f5e854473?q=80&w=1200'
   },
