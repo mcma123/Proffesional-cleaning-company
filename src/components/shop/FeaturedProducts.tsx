@@ -102,7 +102,7 @@ const products: Product[] = [
     category: 'eco-friendly',
     rating: 4.6,
     image: 'https://images.unsplash.com/photo-1616740793857-81952f5e4cf4?q=80&w=600',
-    description: 'Plant-based, biodegradable formula that's safe for families and pets.',
+    description: 'Plant-based, biodegradable formula that is safe for families and pets.',
     eco: true,
     bestSeller: true,
     inStock: true
