@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Home, Building, Users, Image, Car, WaterDroplet } from 'lucide-react';
+import { Home, Building, Users, Image, Car, Droplets } from 'lucide-react';
 
 export const Services = () => {
   const services = [
@@ -41,7 +40,7 @@ export const Services = () => {
       image: 'https://images.unsplash.com/photo-1549275301-c9d60945be6b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
     },
     {
-      icon: <WaterDroplet className="h-12 w-12 text-clean-blue-500" />,
+      icon: <Droplets className="h-12 w-12 text-clean-blue-500" />,
       title: 'High Pressure Cleaning',
       description: 'Powerful pressure cleaning for driveways, patios, and exterior surfaces.',
       path: '/services',
