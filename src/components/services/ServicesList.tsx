@@ -7,7 +7,7 @@ import {
   Users, 
   Image as ImageIcon, 
   Car, 
-  WaterDroplet 
+  Droplets 
 } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -77,8 +77,8 @@ export const ServicesList = () => {
     {
       icon: <Car className="h-12 w-12 text-clean-blue-500" />,
       title: 'Mobile Carwash',
-      description: 'Convenient mobile car washing and detailing services that come to you. Our eco-friendly approach saves water while delivering professional results, from basic washes to complete detailing packages that restore your vehicle's showroom shine.',
-      longDescription: 'Our mobile carwash brings convenience and professional results directly to your location. Whether at home, work, or another location, our self-contained units provide everything needed for exceptional vehicle cleaning. We offer a range of services from express exterior washes to complete detailing packages that include interior cleaning, waxing, and paint protection. Our eco-conscious approach uses specialized equipment that minimizes water usage while maximizing cleaning effectiveness. All products are biodegradable and environmentally responsible.',
+      description: "Convenient mobile car washing and detailing services that come to you. Our eco-friendly approach saves water while delivering professional results, from basic washes to complete detailing packages that restore your vehicle's showroom shine.",
+      longDescription: "Our mobile carwash brings convenience and professional results directly to your location. Whether at home, work, or another location, our self-contained units provide everything needed for exceptional vehicle cleaning. We offer a range of services from express exterior washes to complete detailing packages that include interior cleaning, waxing, and paint protection. Our eco-conscious approach uses specialized equipment that minimizes water usage while maximizing cleaning effectiveness. All products are biodegradable and environmentally responsible.",
       benefits: [
         'Time-saving service that comes to your location',
         'Water-efficient cleaning techniques',
@@ -90,7 +90,7 @@ export const ServicesList = () => {
       image: 'https://images.unsplash.com/photo-1549275301-c9d60945be6b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
     },
     {
-      icon: <WaterDroplet className="h-12 w-12 text-clean-blue-500" />,
+      icon: <Droplets className="h-12 w-12 text-clean-blue-500" />,
       title: 'High Pressure Cleaning',
       description: 'Powerful pressure cleaning for driveways, patios, and exterior surfaces. Our high-pressure systems remove deep-seated dirt, grime, mold, and stains, instantly rejuvenating your outdoor spaces and building exteriors.',
       longDescription: 'Our high-pressure cleaning services effectively remove years of accumulated dirt, grime, mildew, moss, and stains from exterior surfaces. Using professional-grade equipment with adjustable pressure settings, we can safely clean a wide variety of surfaces including concrete, brick, stone, wood decking, and vinyl siding. Our technicians are trained to select the appropriate pressure levels and cleaning solutions for each surface type, ensuring thorough cleaning without damage. This environmentally responsible method uses significantly less water than traditional cleaning methods while achieving superior results.',
