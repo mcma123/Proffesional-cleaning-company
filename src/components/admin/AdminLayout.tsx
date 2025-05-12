@@ -13,7 +13,11 @@ import {
   X
 } from 'lucide-react';
 
-export const AdminLayout = () => {
+interface AdminLayoutProps {
+  children?: React.ReactNode;
+}
+
+export const AdminLayout: React.FC<AdminLayoutProps> = ({ children }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const location = useLocation();
 
@@ -96,7 +100,7 @@ export const AdminLayout = () => {
         )}
         
         <main className="py-10 px-4 sm:px-6 lg:px-8">
-          <Outlet />
+          {children || <Outlet />}
         </main>
       </div>
     </div>
