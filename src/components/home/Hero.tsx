@@ -16,19 +16,14 @@ export const Hero = () => {
 
   return (
     <div className="relative h-screen w-full overflow-hidden">
-      {/* Video Background */}
+      {/* Background Image */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/30 z-10"></div>
-        <video
-          autoPlay
-          muted
-          loop
+        <img
+          src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+          alt="Professional Cleaning Services"
           className="w-full h-full object-cover"
-          poster="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5"
-        >
-          <source src="https://player.vimeo.com/progressive_redirect/playback/521741387/rendition/1080p/file.mp4?loc=external" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        />
       </div>
 
       {/* Hero Content */}

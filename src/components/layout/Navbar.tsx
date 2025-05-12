@@ -37,9 +37,11 @@ export const Navbar = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <span className="text-2xl font-bold bg-gradient-to-r from-clean-green-500 to-clean-blue-500 bg-clip-text text-transparent">
-              ProClean
-            </span>
+            <img 
+              src="/lovable-uploads/dd79e2ab-40e5-4f41-8d79-9e242cf7c495.png" 
+              alt="Professional Cleaning Company" 
+              className="h-14 w-auto mr-2"
+            />
           </Link>
 
           {/* Desktop Navigation */}

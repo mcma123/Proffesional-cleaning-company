@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Home, Building, Users, Image, Car, Droplets } from 'lucide-react';
+import { Home, Building, Users, Image, Car, Sparkles } from 'lucide-react';
 
 export const Services = () => {
   const services = [
@@ -9,37 +9,43 @@ export const Services = () => {
       icon: <Home className="h-12 w-12 text-clean-blue-500" />,
       title: 'Home/Office Cleaning',
       description: 'Professional cleaning services for homes and offices with eco-friendly products.',
-      path: '/services/home-office'
+      path: '/services/home-office',
+      image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
     },
     {
       icon: <Building className="h-12 w-12 text-clean-blue-500" />,
       title: 'Building Cleaning',
       description: 'Comprehensive cleaning solutions for all types of buildings and facilities.',
-      path: '/services/building'
+      path: '/services/building',
+      image: 'https://images.unsplash.com/photo-1613825787113-a4e1e87117e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80'
     },
     {
       icon: <Users className="h-12 w-12 text-clean-blue-500" />,
       title: 'Commercial Cleaning',
       description: 'Specialized cleaning services for businesses, retailers, and commercial spaces.',
-      path: '/services/commercial'
+      path: '/services/commercial',
+      image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
     },
     {
       icon: <Image className="h-12 w-12 text-clean-blue-500" />,
       title: 'Window Cleaning',
       description: 'Crystal clear window cleaning for residential and commercial properties.',
-      path: '/services/window'
+      path: '/services/window',
+      image: 'https://images.unsplash.com/photo-1527689638836-411945a2b57c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
     },
     {
       icon: <Car className="h-12 w-12 text-clean-blue-500" />,
       title: 'Mobile Carwash',
       description: 'Convenient mobile car washing and detailing services that come to you.',
-      path: '/services/carwash'
+      path: '/services/carwash',
+      image: 'https://images.unsplash.com/photo-1549275301-c9d60945be6b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
     },
     {
-      icon: <Droplets className="h-12 w-12 text-clean-blue-500" />,
+      icon: <Sparkles className="h-12 w-12 text-clean-blue-500" />,
       title: 'High Pressure Cleaning',
       description: 'Powerful pressure cleaning for driveways, patios, and exterior surfaces.',
-      path: '/services/pressure-cleaning'
+      path: '/services/pressure-cleaning',
+      image: 'https://images.unsplash.com/photo-1635771632419-1f9ed027fcee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80'
     }
   ];
 
@@ -61,20 +67,30 @@ export const Services = () => {
               to={service.path}
               className="group"
             >
-              <div className="glass-card p-8 h-full hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group-hover:border-clean-green-300">
-                <div className="mb-6 rounded-full bg-clean-green-50 p-4 inline-block">
-                  {service.icon}
+              <div className="glass-card p-0 h-full hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group-hover:border-clean-green-300 overflow-hidden">
+                <div className="h-48 relative overflow-hidden">
+                  <img 
+                    src={service.image} 
+                    alt={service.title} 
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 </div>
-                <h3 className="text-2xl font-semibold mb-4 group-hover:text-clean-green-500 transition-colors">
-                  {service.title}
-                </h3>
-                <p className="text-gray-600">
-                  {service.description}
-                </p>
-                <div className="mt-6 text-clean-green-500 font-medium flex items-center">
-                  <span className="transform translate-x-0 group-hover:translate-x-2 transition-transform">
-                    Learn more
-                  </span>
+                <div className="p-6">
+                  <div className="mb-4 rounded-full bg-clean-green-50 p-3 inline-block">
+                    {service.icon}
+                  </div>
+                  <h3 className="text-2xl font-semibold mb-3 group-hover:text-clean-green-500 transition-colors">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-600 mb-4">
+                    {service.description}
+                  </p>
+                  <div className="text-clean-green-500 font-medium flex items-center">
+                    <span className="transform translate-x-0 group-hover:translate-x-2 transition-transform">
+                      Learn more
+                    </span>
+                  </div>
                 </div>
               </div>
             </Link>
