@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Home, Building, Users, Image, Car, Sparkles } from 'lucide-react';
+import { Home, Building, Users, Image, Car, WaterDroplet } from 'lucide-react';
 
 export const Services = () => {
   const services = [
@@ -9,42 +9,42 @@ export const Services = () => {
       icon: <Home className="h-12 w-12 text-clean-blue-500" />,
       title: 'Home/Office Cleaning',
       description: 'Professional cleaning services for homes and offices with eco-friendly products.',
-      path: '/services/home-office',
+      path: '/services',
       image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
     },
     {
       icon: <Building className="h-12 w-12 text-clean-blue-500" />,
       title: 'Building Cleaning',
       description: 'Comprehensive cleaning solutions for all types of buildings and facilities.',
-      path: '/services/building',
+      path: '/services',
       image: 'https://images.unsplash.com/photo-1613825787113-a4e1e87117e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80'
     },
     {
       icon: <Users className="h-12 w-12 text-clean-blue-500" />,
       title: 'Commercial Cleaning',
       description: 'Specialized cleaning services for businesses, retailers, and commercial spaces.',
-      path: '/services/commercial',
+      path: '/services',
       image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
     },
     {
       icon: <Image className="h-12 w-12 text-clean-blue-500" />,
       title: 'Window Cleaning',
       description: 'Crystal clear window cleaning for residential and commercial properties.',
-      path: '/services/window',
+      path: '/services',
       image: 'https://images.unsplash.com/photo-1527689638836-411945a2b57c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
     },
     {
       icon: <Car className="h-12 w-12 text-clean-blue-500" />,
       title: 'Mobile Carwash',
       description: 'Convenient mobile car washing and detailing services that come to you.',
-      path: '/services/carwash',
+      path: '/services',
       image: 'https://images.unsplash.com/photo-1549275301-c9d60945be6b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
     },
     {
-      icon: <Sparkles className="h-12 w-12 text-clean-blue-500" />,
+      icon: <WaterDroplet className="h-12 w-12 text-clean-blue-500" />,
       title: 'High Pressure Cleaning',
       description: 'Powerful pressure cleaning for driveways, patios, and exterior surfaces.',
-      path: '/services/pressure-cleaning',
+      path: '/services',
       image: 'https://images.unsplash.com/photo-1635771632419-1f9ed027fcee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80'
     }
   ];
