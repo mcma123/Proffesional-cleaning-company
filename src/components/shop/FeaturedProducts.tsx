@@ -1,9 +1,8 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { ShoppingCart, Star, SprayBottle, Trash2, Droplets } from 'lucide-react';
+import { ShoppingCart, Star, Spray, Trash2, Droplets } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
@@ -275,9 +274,9 @@ export const FeaturedProducts = () => {
                           )}
                         </div>
                         
-                        {/* Category icon */}
+                        {/* Category icon - Updated with proper icons */}
                         <div className="absolute top-3 right-3 bg-white/80 p-2 rounded-full shadow-md">
-                          {product.category === 'all-purpose' && <SprayBottle className="h-5 w-5 text-clean-green-500" />}
+                          {product.category === 'all-purpose' && <Spray className="h-5 w-5 text-clean-green-500" />}
                           {product.category === 'specialized' && <Droplets className="h-5 w-5 text-clean-blue-500" />}
                           {product.category === 'eco-friendly' && <Trash2 className="h-5 w-5 text-green-600" />}
                           {product.category === 'tools' && <ShoppingCart className="h-5 w-5 text-amber-500" />}
