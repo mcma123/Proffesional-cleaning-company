@@ -1,68 +1,147 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { 
-  Home, 
-  Building, 
-  Users, 
-  Image as ImageIcon, 
-  Car, 
-  Droplets 
+  Carpet, 
+  Chair, 
+  Bed, 
+  Curtains, 
+  Sofa, 
+  Truck,
+  SprayCan, 
+  AirVent, 
+  Window, 
+  Sun, 
+  Flower 
 } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
-// Service data from homepage
+// Updated service data
 export const ServicesList = () => {
   const services = [
     {
-      icon: <Home className="h-12 w-12 text-clean-blue-500" />,
-      title: 'Home/Office Cleaning',
-      description: 'Transform your living and working spaces with our comprehensive cleaning services. Using eco-friendly products and advanced techniques, we ensure every corner of your home or office shines with cleanliness. Our trained professionals pay attention to detail, focusing on high-touch surfaces, hard-to-reach areas, and specialized cleaning needs.',
-      longDescription: 'Our home and office cleaning services are designed to meet the unique needs of modern living and working environments. We understand that a clean space contributes to productivity, health, and overall wellbeing. Our team uses industry-leading equipment and environmentally responsible products to deliver results that exceed expectations. From regular maintenance to deep cleaning sessions, we customize our approach to fit your schedule and specific requirements.',
+      icon: <Carpet className="h-12 w-12 text-clean-blue-500" />,
+      title: 'Carpet Cleaning',
+      description: 'Deep cleaning for all types of carpets to remove stains, odors, and allergens. Our advanced extraction method provides deeper cleaning compared to traditional methods.',
+      longDescription: 'Our carpet cleaning service uses hot water extraction (steam cleaning) to penetrate deep into carpet fibers, removing dirt, allergens, and stains that regular vacuum cleaners cannot reach. We use eco-friendly cleaning solutions that are safe for children and pets, while still being effective against tough stains and odors. Regular professional carpet cleaning not only improves appearance but also extends the life of your carpets by removing abrasive dirt particles.',
       benefits: [
-        'Improved air quality and healthier environment',
-        'Customized cleaning plans tailored to your needs',
-        'Eco-friendly products safe for children and pets',
-        'Trained professionals with attention to detail',
-        'Flexible scheduling options including evenings and weekends'
+        'Removes deep-seated dirt, allergens, and dust mites',
+        'Eliminates stubborn stains and unpleasant odors',
+        'Extends carpet life by removing abrasive particles',
+        'Improves indoor air quality',
+        'Safe for all types of carpets including wool and delicate fibers'
       ],
-      path: '/services/home-office',
-      image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
+      path: '/services/carpet',
+      image: 'https://images.unsplash.com/photo-1558317374-067fb5f30001?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
     },
     {
-      icon: <Building className="h-12 w-12 text-clean-blue-500" />,
-      title: 'Building Cleaning',
-      description: 'Keep your building impeccable with our specialized cleaning solutions. We handle everything from lobbies and common areas to restrooms and maintenance spaces. Our services are designed to maintain the value and appearance of your property while providing a clean, healthy environment for occupants.',
-      longDescription: 'Our building cleaning services address the complex needs of multi-level structures, apartment complexes, and commercial buildings. We employ specialized equipment and trained staff to ensure every aspect of your building receives proper attention. From high-rise window cleaning to parking garage maintenance, our comprehensive approach keeps your entire property looking its best. We work closely with building managers to develop maintenance schedules that minimize disruption while maximizing cleanliness and safety.',
+      icon: <Chair className="h-12 w-12 text-clean-blue-500" />,
+      title: 'Office Chair Cleaning',
+      description: 'Professional cleaning services for office chairs and furniture. Remove years of accumulated dirt and restore the appearance of your office furniture.',
+      longDescription: 'Office chairs endure daily use and can accumulate dirt, oils, and germs over time. Our specialized office chair cleaning service addresses both the fabric and mechanical components of your chairs. Using commercial-grade cleaning equipment, we extract embedded dirt, remove stains, and sanitize surfaces. We pay special attention to high-touch areas like armrests and adjustment levers. Our service helps maintain a professional office environment while extending the life of your furniture investment.',
       benefits: [
-        'Comprehensive cleaning of all common areas and facilities',
-        'Specialized equipment for high-rise and large-scale buildings',
-        'Regular maintenance schedules to prevent dirt buildup',
-        'Emergency cleaning services available',
-        'Compliance with all safety and building regulations'
+        'Removes embedded dirt, stains, and accumulated oils',
+        'Sanitizes high-touch surfaces to reduce germ transmission',
+        'Improves the professional appearance of your office',
+        'Extends the lifespan of expensive office furniture',
+        'Quick drying process minimizes business disruption'
       ],
-      path: '/services/building',
-      image: 'https://images.unsplash.com/photo-1613825787113-a4e1e87117e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80'
+      path: '/services/office-chairs',
+      image: 'https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
     },
     {
-      icon: <Users className="h-12 w-12 text-clean-blue-500" />,
-      title: 'Commercial Cleaning',
-      description: 'Specialized cleaning services for businesses, retailers, and commercial spaces. We understand the unique requirements of commercial environments and deliver spotless results with minimal disruption to your operations.',
-      longDescription: 'Our commercial cleaning services are tailored for businesses that understand the importance of a clean, professional environment. We serve retail stores, restaurants, medical facilities, and office complexes with customized cleaning programs that enhance your brand image and customer experience. Our teams work during off-hours or during low-traffic periods to minimize business disruption while maintaining the highest standards of cleanliness. We use commercial-grade equipment and industry-approved cleaning agents to tackle the challenges specific to high-traffic business environments.',
+      icon: <Bed className="h-12 w-12 text-clean-blue-500" />,
+      title: 'Mattress Cleaning',
+      description: 'Thorough mattress cleaning to remove dust mites, allergens, and stains. Improve your sleep quality with a professionally sanitized mattress.',
+      longDescription: 'Our mattress cleaning service addresses the unseen contaminants that accumulate in your bed over time. The average mattress can contain millions of dust mites and significant amounts of dead skin cells, sweat residue, and other allergens. Our multi-step process includes UV sanitization to kill bacteria, powerful extraction to remove allergens, stain treatment, and deodorization. This comprehensive approach not only improves the hygiene of your sleeping environment but can also help alleviate symptoms for allergy and asthma sufferers.',
       benefits: [
-        'Enhanced brand image through spotless facilities',
-        'Improved customer experience and perception',
-        'Reduced employee sick days through better sanitation',
-        'Flexible scheduling that works around your business hours',
-        'Specialized cleaning for industry-specific requirements'
+        'Eliminates dust mites and their allergens',
+        'Removes stains, sweat residue, and odors',
+        'UV sanitization kills bacteria and other microorganisms',
+        'May reduce symptoms for allergy and asthma sufferers',
+        'Extends the useful life of your mattress'
       ],
-      path: '/services/commercial',
-      image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
+      path: '/services/mattress',
+      image: 'https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
     },
     {
-      icon: <ImageIcon className="h-12 w-12 text-clean-blue-500" />,
+      icon: <Curtains className="h-12 w-12 text-clean-blue-500" />,
+      title: 'Curtains Cleaning',
+      description: 'Professional cleaning for all types of curtains and drapes. Our careful cleaning process preserves fabric quality while removing dust and allergens.',
+      longDescription: 'Curtains and drapes act as filters, collecting dust, pollen, and odors over time. Our curtain cleaning service handles all fabric types including delicate materials that require special care. Depending on the fabric, we use either wet cleaning, dry cleaning, or steam cleaning methods. We can clean your curtains either on-site or with our take-down and re-hanging service. Regular curtain cleaning not only improves appearance but also removes allergens that can affect indoor air quality and respiratory health.',
+      benefits: [
+        'Removes accumulated dust, allergens, and odors',
+        'Specialized cleaning methods for different fabric types',
+        'Option for on-site cleaning or take-down service',
+        'Extends fabric life by removing damaging particles',
+        'Improves room appearance and air quality'
+      ],
+      path: '/services/curtains',
+      image: 'https://images.unsplash.com/photo-1628611225459-226c4cecc5cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
+    },
+    {
+      icon: <Sofa className="h-12 w-12 text-clean-blue-500" />,
+      title: 'Couch Cleaning',
+      description: 'Deep cleaning services for couches and upholstery to remove stains, odors, and allergens. Revitalize your furniture with our professional cleaning service.',
+      longDescription: 'Our upholstery cleaning service rejuvenates couches and soft furnishings by addressing both visible stains and hidden contaminants. We begin with a thorough inspection to identify fabric types and soiling conditions, followed by careful pre-treatment of stains. Our hot water extraction method then deeply cleans the upholstery while carefully controlling moisture. This process removes dirt, allergens, and residues that regular cleaning cannot address, leaving your furniture refreshed and sanitized.',
+      benefits: [
+        'Removes deep-seated dirt and persistent stains',
+        'Eliminates pet odors and other unpleasant smells',
+        'Extends furniture lifespan by removing abrasive dirt',
+        'Safe for various upholstery types including delicate fabrics',
+        'Improves indoor air quality by removing allergens'
+      ],
+      path: '/services/couches',
+      image: 'https://images.unsplash.com/photo-1721322800607-8c38375eef04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
+    },
+    {
+      icon: <Truck className="h-12 w-12 text-clean-blue-500" />,
+      title: 'Truck Mobile Car Wash',
+      description: 'Mobile car washing services for trucks and large vehicles. Our truck brings all necessary equipment to your location for a convenient washing experience.',
+      longDescription: 'Our truck mobile car wash service brings professional vehicle cleaning to your location. This service is particularly valuable for fleet operators, construction companies, and owners of large vehicles who find traditional car washes impractical. Our self-contained washing unit provides everything needed for a comprehensive clean, from exterior washing and waxing to interior vacuuming and detailing. We use water-efficient systems and environmentally responsible cleaning products that effectively remove road grime, salt, and industrial contaminants.',
+      benefits: [
+        'Convenient on-site service saves time and logistics',
+        'Specialized equipment for large vehicles and fleets',
+        'Eco-friendly washing system uses minimal water',
+        'Complete service from exterior washing to interior detailing',
+        'Flexible scheduling including weekends and after hours'
+      ],
+      path: '/services/truck-wash',
+      image: 'https://images.unsplash.com/photo-1549275301-c9d60945be6b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
+    },
+    {
+      icon: <SprayCan className="h-12 w-12 text-clean-blue-500" />,
+      title: 'High Pressure Cleaning',
+      description: 'Powerful pressure cleaning for driveways, patios, and exterior surfaces. Our high-pressure systems remove deep-seated dirt, grime, mold, and stains.',
+      longDescription: 'Our high-pressure cleaning service effectively removes years of accumulated dirt, grime, mildew, moss, and stains from exterior surfaces. Using professional-grade equipment with adjustable pressure settings, we can safely clean a wide variety of surfaces including concrete, brick, stone, wood decking, and vinyl siding. Our technicians are trained to select the appropriate pressure levels and cleaning solutions for each surface type, ensuring thorough cleaning without damage. This environmentally responsible method uses significantly less water than traditional cleaning methods while achieving superior results.',
+      benefits: [
+        'Dramatic transformation of dingy, stained surfaces',
+        'Removal of slippery mold and mildew for improved safety',
+        'Extended lifespan of driveways, decks, and exterior surfaces',
+        'Environmentally responsible cleaning with minimal water usage',
+        'Preparation of surfaces for sealing, staining, or painting'
+      ],
+      path: '/services/pressure-cleaning',
+      image: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
+    },
+    {
+      icon: <AirVent className="h-12 w-12 text-clean-blue-500" />,
+      title: 'Duct Cleaning',
+      description: 'Thorough cleaning of HVAC ducts to improve air quality and system efficiency. Remove dust, allergens, and contaminants from your ventilation system.',
+      longDescription: 'Our comprehensive duct cleaning service improves indoor air quality by removing accumulated contaminants from your HVAC system. Over time, air ducts collect dust, pollen, mold spores, pet dander, and other allergens that are then circulated throughout your home or business. Our process begins with inspection using specialized cameras, followed by thorough cleaning using negative air pressure equipment and specialized brushes. We also clean other components of your HVAC system including the supply and return vents, registers, grilles, diffusers, and coils when accessible.',
+      benefits: [
+        'Improves indoor air quality by removing circulating contaminants',
+        'May reduce symptoms for allergy and asthma sufferers',
+        'Increases HVAC system efficiency and potentially reduces energy costs',
+        'Removes musty odors from the ventilation system',
+        'Complete cleaning of all accessible ductwork and HVAC components'
+      ],
+      path: '/services/duct',
+      image: 'https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
+    },
+    {
+      icon: <Window className="h-12 w-12 text-clean-blue-500" />,
       title: 'Window Cleaning',
-      description: 'Crystal clear window cleaning for residential and commercial properties. Our skilled technicians use professional equipment and techniques to achieve streak-free, sparkling windows that enhance your view and let in maximum natural light.',
+      description: 'Crystal clear window cleaning for residential and commercial properties. Our skilled technicians use professional equipment and techniques to achieve streak-free results.',
       longDescription: 'Our professional window cleaning services go beyond simply wiping glass surfaces. We use specialized tools and purified water systems to clean windows, frames, sills, and screens. For multi-story buildings, our trained technicians employ safe and effective methods including water-fed pole systems and, when necessary, rope access techniques. Regular window cleaning not only improves appearance but also extends the life of your windows by removing corrosive contaminants and preventing permanent damage from hard water stains, oxidation, and acid rain.',
       benefits: [
         'Streak-free, crystal clear results on all glass surfaces',
@@ -75,34 +154,34 @@ export const ServicesList = () => {
       image: 'https://images.unsplash.com/photo-1527689638836-411945a2b57c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
     },
     {
-      icon: <Car className="h-12 w-12 text-clean-blue-500" />,
-      title: 'Mobile Carwash',
-      description: "Convenient mobile car washing and detailing services that come to you. Our eco-friendly approach saves water while delivering professional results, from basic washes to complete detailing packages that restore your vehicle's showroom shine.",
-      longDescription: "Our mobile carwash brings convenience and professional results directly to your location. Whether at home, work, or another location, our self-contained units provide everything needed for exceptional vehicle cleaning. We offer a range of services from express exterior washes to complete detailing packages that include interior cleaning, waxing, and paint protection. Our eco-conscious approach uses specialized equipment that minimizes water usage while maximizing cleaning effectiveness. All products are biodegradable and environmentally responsible.",
+      icon: <Sun className="h-12 w-12 text-clean-blue-500" />,
+      title: 'Solar Panel Cleaning',
+      description: 'Specialized cleaning for solar panels to maintain optimal efficiency. Remove dust, bird droppings, and other debris that reduce energy production.',
+      longDescription: 'Our solar panel cleaning service helps maintain the efficiency and output of your renewable energy investment. Even a thin layer of dust, pollen, or bird droppings can significantly reduce the electricity generation capacity of solar panels. We use specialized equipment including soft brushes, purified water systems, and biodegradable cleaning solutions that effectively clean without scratching or damaging the panels. Our technicians are trained in safe working methods for rooftop access and are knowledgeable about different panel types and their specific cleaning requirements.',
       benefits: [
-        'Time-saving service that comes to your location',
-        'Water-efficient cleaning techniques',
-        'Environmentally friendly, biodegradable products',
-        'Comprehensive interior and exterior cleaning options',
-        'Professional detailing services for showroom-quality results'
+        'Maintains optimal energy production efficiency',
+        'Extends system lifespan by removing potentially damaging contaminants',
+        'Ensures warranty compliance through proper maintenance',
+        'Uses non-abrasive methods safe for all panel types',
+        'Professional inspection identifies any potential issues'
       ],
-      path: '/services/carwash',
-      image: 'https://images.unsplash.com/photo-1549275301-c9d60945be6b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
+      path: '/services/solar-panel',
+      image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
     },
     {
-      icon: <Droplets className="h-12 w-12 text-clean-blue-500" />,
-      title: 'High Pressure Cleaning',
-      description: 'Powerful pressure cleaning for driveways, patios, and exterior surfaces. Our high-pressure systems remove deep-seated dirt, grime, mold, and stains, instantly rejuvenating your outdoor spaces and building exteriors.',
-      longDescription: 'Our high-pressure cleaning services effectively remove years of accumulated dirt, grime, mildew, moss, and stains from exterior surfaces. Using professional-grade equipment with adjustable pressure settings, we can safely clean a wide variety of surfaces including concrete, brick, stone, wood decking, and vinyl siding. Our technicians are trained to select the appropriate pressure levels and cleaning solutions for each surface type, ensuring thorough cleaning without damage. This environmentally responsible method uses significantly less water than traditional cleaning methods while achieving superior results.',
+      icon: <Flower className="h-12 w-12 text-clean-blue-500" />,
+      title: 'Gardening & Pool Cleaning',
+      description: 'Professional gardening and pool maintenance services to keep your outdoor spaces beautiful and functional year-round.',
+      longDescription: 'Our comprehensive outdoor maintenance service combines professional gardening and pool cleaning to keep your exterior spaces in perfect condition. Our gardening services include regular lawn mowing, edging, pruning, weeding, fertilization, and seasonal planting. Our pool maintenance includes water testing and balancing, skimming, vacuuming, filter cleaning, and equipment checks. By combining these services, we provide a convenient one-stop solution for complete outdoor care, saving you time and ensuring consistent quality across all aspects of your outdoor space.',
       benefits: [
-        'Dramatic transformation of dingy, stained surfaces',
-        'Removal of slippery mold and mildew for improved safety',
-        'Extended lifespan of driveways, decks, and exterior surfaces',
-        'Environmentally responsible cleaning with minimal water usage',
-        'Preparation of surfaces for sealing, staining, or painting'
+        'Comprehensive care of all outdoor spaces',
+        'Professional garden design and seasonal planting options',
+        'Complete pool maintenance including water chemistry management',
+        'Regular scheduled service with consistent quality',
+        'Environmentally responsible practices and products'
       ],
-      path: '/services/pressure-cleaning',
-      image: 'https://images.unsplash.com/photo-1635771632419-1f9ed027fcee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80'
+      path: '/services/gardening-pool',
+      image: 'https://images.unsplash.com/photo-1470753323753-3f8091bb0232?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
     }
   ];
 
