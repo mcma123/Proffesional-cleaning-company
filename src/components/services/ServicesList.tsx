@@ -1,15 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { 
-  Carpet, 
-  Chair, 
-  Bed, 
-  Curtains, 
+  Brush, 
+  Armchair, 
+  BedDouble, 
+  Blinds, 
   Sofa, 
   Truck,
   SprayCan, 
   AirVent, 
-  Window, 
+  Home, 
   Sun, 
   Flower 
 } from 'lucide-react';
@@ -19,7 +19,7 @@ import { Card, CardContent } from '@/components/ui/card';
 export const ServicesList = () => {
   const services = [
     {
-      icon: <Carpet className="h-12 w-12 text-clean-blue-500" />,
+      icon: <Brush className="h-12 w-12 text-clean-blue-500" />,
       title: 'Carpet Cleaning',
       description: 'Deep cleaning for all types of carpets to remove stains, odors, and allergens. Our advanced extraction method provides deeper cleaning compared to traditional methods.',
       longDescription: 'Our carpet cleaning service uses hot water extraction (steam cleaning) to penetrate deep into carpet fibers, removing dirt, allergens, and stains that regular vacuum cleaners cannot reach. We use eco-friendly cleaning solutions that are safe for children and pets, while still being effective against tough stains and odors. Regular professional carpet cleaning not only improves appearance but also extends the life of your carpets by removing abrasive dirt particles.',
@@ -34,7 +34,7 @@ export const ServicesList = () => {
       image: 'https://images.unsplash.com/photo-1558317374-067fb5f30001?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
     },
     {
-      icon: <Chair className="h-12 w-12 text-clean-blue-500" />,
+      icon: <Armchair className="h-12 w-12 text-clean-blue-500" />,
       title: 'Office Chair Cleaning',
       description: 'Professional cleaning services for office chairs and furniture. Remove years of accumulated dirt and restore the appearance of your office furniture.',
       longDescription: 'Office chairs endure daily use and can accumulate dirt, oils, and germs over time. Our specialized office chair cleaning service addresses both the fabric and mechanical components of your chairs. Using commercial-grade cleaning equipment, we extract embedded dirt, remove stains, and sanitize surfaces. We pay special attention to high-touch areas like armrests and adjustment levers. Our service helps maintain a professional office environment while extending the life of your furniture investment.',
@@ -49,7 +49,7 @@ export const ServicesList = () => {
       image: 'https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
     },
     {
-      icon: <Bed className="h-12 w-12 text-clean-blue-500" />,
+      icon: <BedDouble className="h-12 w-12 text-clean-blue-500" />,
       title: 'Mattress Cleaning',
       description: 'Thorough mattress cleaning to remove dust mites, allergens, and stains. Improve your sleep quality with a professionally sanitized mattress.',
       longDescription: 'Our mattress cleaning service addresses the unseen contaminants that accumulate in your bed over time. The average mattress can contain millions of dust mites and significant amounts of dead skin cells, sweat residue, and other allergens. Our multi-step process includes UV sanitization to kill bacteria, powerful extraction to remove allergens, stain treatment, and deodorization. This comprehensive approach not only improves the hygiene of your sleeping environment but can also help alleviate symptoms for allergy and asthma sufferers.',
@@ -64,7 +64,7 @@ export const ServicesList = () => {
       image: 'https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
     },
     {
-      icon: <Curtains className="h-12 w-12 text-clean-blue-500" />,
+      icon: <Blinds className="h-12 w-12 text-clean-blue-500" />,
       title: 'Curtains Cleaning',
       description: 'Professional cleaning for all types of curtains and drapes. Our careful cleaning process preserves fabric quality while removing dust and allergens.',
       longDescription: 'Curtains and drapes act as filters, collecting dust, pollen, and odors over time. Our curtain cleaning service handles all fabric types including delicate materials that require special care. Depending on the fabric, we use either wet cleaning, dry cleaning, or steam cleaning methods. We can clean your curtains either on-site or with our take-down and re-hanging service. Regular curtain cleaning not only improves appearance but also removes allergens that can affect indoor air quality and respiratory health.',
@@ -139,7 +139,7 @@ export const ServicesList = () => {
       image: 'https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
     },
     {
-      icon: <Window className="h-12 w-12 text-clean-blue-500" />,
+      icon: <Home className="h-12 w-12 text-clean-blue-500" />,
       title: 'Window Cleaning',
       description: 'Crystal clear window cleaning for residential and commercial properties. Our skilled technicians use professional equipment and techniques to achieve streak-free results.',
       longDescription: 'Our professional window cleaning services go beyond simply wiping glass surfaces. We use specialized tools and purified water systems to clean windows, frames, sills, and screens. For multi-story buildings, our trained technicians employ safe and effective methods including water-fed pole systems and, when necessary, rope access techniques. Regular window cleaning not only improves appearance but also extends the life of your windows by removing corrosive contaminants and preventing permanent damage from hard water stains, oxidation, and acid rain.',

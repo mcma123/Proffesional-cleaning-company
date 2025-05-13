@@ -2,15 +2,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { 
-  Carpet, 
-  Chair, 
-  Bed, 
-  Curtains, 
+  Brush, 
+  Armchair, 
+  BedDouble, 
+  Blinds, 
   Sofa, 
   Truck,
   SprayCan, 
   AirVent, 
-  Window, 
+  Home, 
   Sun, 
   Flower
 } from 'lucide-react';
@@ -18,28 +18,28 @@ import {
 export const Services = () => {
   const services = [
     {
-      icon: <Carpet className="h-12 w-12 text-clean-blue-500" />,
+      icon: <Brush className="h-12 w-12 text-clean-blue-500" />,
       title: 'Carpet Cleaning',
       description: 'Deep cleaning for all types of carpets to remove stains, odors, and allergens.',
       path: '/services',
       image: 'https://images.unsplash.com/photo-1558317374-067fb5f30001?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
     },
     {
-      icon: <Chair className="h-12 w-12 text-clean-blue-500" />,
+      icon: <Armchair className="h-12 w-12 text-clean-blue-500" />,
       title: 'Office Chairs',
       description: 'Professional cleaning services for office chairs and furniture.',
       path: '/services',
       image: 'https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
     },
     {
-      icon: <Bed className="h-12 w-12 text-clean-blue-500" />,
+      icon: <BedDouble className="h-12 w-12 text-clean-blue-500" />,
       title: 'Mattress Cleaning',
       description: 'Thorough mattress cleaning to remove dust mites, allergens, and stains.',
       path: '/services',
       image: 'https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
     },
     {
-      icon: <Curtains className="h-12 w-12 text-clean-blue-500" />,
+      icon: <Blinds className="h-12 w-12 text-clean-blue-500" />,
       title: 'Curtains',
       description: 'Professional cleaning for all types of curtains and drapes.',
       path: '/services',
@@ -74,7 +74,7 @@ export const Services = () => {
       image: 'https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
     },
     {
-      icon: <Window className="h-12 w-12 text-clean-blue-500" />,
+      icon: <Home className="h-12 w-12 text-clean-blue-500" />,
       title: 'Window Cleaning',
       description: 'Crystal clear window cleaning for residential and commercial properties.',
       path: '/services',
