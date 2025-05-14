@@ -21,8 +21,8 @@ export const ContactInfo = () => {
     {
       icon: <Phone className="h-5 w-5" />,
       title: 'Phone',
-      info: '+1 234 567 8900',
-      action: 'tel:+12345678900'
+      info: '+27 71 442 1210',
+      action: 'tel:+27714421210'
     },
     {
       icon: <Mail className="h-5 w-5" />,
@@ -33,8 +33,8 @@ export const ContactInfo = () => {
     {
       icon: <MapPin className="h-5 w-5" />,
       title: 'Location',
-      info: '123 Cleaning Ave, City, State 12345',
-      action: 'https://maps.google.com'
+      info: '174 Smit St. Braamfontein, 2001',
+      action: 'https://maps.google.com/maps?q=174+Smit+St+Braamfontein+2001'
     },
     {
       icon: <Clock className="h-5 w-5" />,
@@ -107,6 +107,22 @@ export const ContactInfo = () => {
               </div>
             </motion.div>
           ))}
+        </div>
+      </motion.div>
+      
+      {/* Map Component */}
+      <motion.div
+        className="mt-8"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+      >
+        <h2 className="text-2xl font-bold mb-6 flex items-center gap-3">
+          <MapPin className="h-6 w-6 text-clean-green-500" />
+          Find Us
+        </h2>
+        <div className="h-[300px] rounded-lg overflow-hidden shadow-lg border border-gray-200">
+          <LocationMap />
         </div>
       </motion.div>
       

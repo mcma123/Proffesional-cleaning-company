@@ -96,11 +96,11 @@ export const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-start">
                 <MapPin className="h-5 w-5 text-clean-green-400 mr-3 mt-0.5" />
-                <p className="text-gray-400">123 Cleaning Street, City, Country, 12345</p>
+                <p className="text-gray-400">174 Smit St. Braamfontein, 2001</p>
               </div>
               <div className="flex items-center">
                 <Phone className="h-5 w-5 text-clean-green-400 mr-3" />
-                <p className="text-gray-400">+1 (555) 123-4567</p>
+                <p className="text-gray-400">+27 71 442 1210</p>
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-clean-green-400 mr-3" />
