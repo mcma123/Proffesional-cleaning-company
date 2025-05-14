@@ -3,21 +3,24 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { MessageCircle } from 'lucide-react';
 
-export const WhatsAppButton = () => {
+const WhatsAppButton = () => {
   // Phone number without any special characters
   const phoneNumber = '27714421210';
+  const message = 'Hello, I would like to inquire about your cleaning services.';
+  
+  // Construct WhatsApp URL
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
   
   return (
     <motion.a
-      href={`https://wa.me/${phoneNumber}`}
+      href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20BD5C] text-white p-3.5 rounded-full shadow-lg"
+      className="fixed bottom-6 right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 flex items-center justify-center"
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
-      aria-label="Contact us on WhatsApp"
-      initial={{ opacity: 0, scale: 0 }}
-      animate={{ opacity: 1, scale: 1 }}
+      initial={{ scale: 0 }}
+      animate={{ scale: 1 }}
       transition={{
         type: "spring",
         stiffness: 260,
