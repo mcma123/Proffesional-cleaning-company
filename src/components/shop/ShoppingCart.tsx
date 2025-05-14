@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Minus, Plus, X, ShoppingCart } from 'lucide-react';
+import { Minus, Plus, X, ShoppingCart as CartIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -59,7 +59,7 @@ export const ShoppingCart = () => {
           <div className="w-full md:w-2/3">
             <div className="flex items-center justify-between mb-8">
               <h1 className="text-3xl font-bold flex items-center gap-3">
-                <ShoppingCart className="h-8 w-8 text-clean-green-500" />
+                <CartIcon className="h-8 w-8 text-clean-green-500" />
                 Your Shopping Cart
               </h1>
               <span className="text-gray-500">{cartItems.length} items</span>
