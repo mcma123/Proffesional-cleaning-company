@@ -31,7 +31,7 @@ export const ServicesList = () => {
         'Safe for all types of carpets including wool and delicate fibers'
       ],
       path: '/services/carpet',
-      image: 'https://images.unsplash.com/photo-1558317374-067fb5f30001?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
+      image: 'public/vacum cleaning.jpg'
     },
     {
       icon: <Armchair className="h-12 w-12 text-clean-blue-500" />,
@@ -46,7 +46,7 @@ export const ServicesList = () => {
         'Quick drying process minimizes business disruption'
       ],
       path: '/services/office-chairs',
-      image: 'https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
+      image: 'public/office chair cleaning.jpg'
     },
     {
       icon: <BedDouble className="h-12 w-12 text-clean-blue-500" />,
@@ -61,7 +61,7 @@ export const ServicesList = () => {
         'Extends the useful life of your mattress'
       ],
       path: '/services/mattress',
-      image: 'https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
+      image: 'public/matress cleaning.jpg'
     },
     {
       icon: <Blinds className="h-12 w-12 text-clean-blue-500" />,
@@ -76,7 +76,7 @@ export const ServicesList = () => {
         'Improves room appearance and air quality'
       ],
       path: '/services/curtains',
-      image: 'https://images.unsplash.com/photo-1628611225459-226c4cecc5cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
+      image: 'public/Curtain-Cleaning.jpg'
     },
     {
       icon: <Sofa className="h-12 w-12 text-clean-blue-500" />,
@@ -91,7 +91,7 @@ export const ServicesList = () => {
         'Improves indoor air quality by removing allergens'
       ],
       path: '/services/couches',
-      image: 'https://images.unsplash.com/photo-1721322800607-8c38375eef04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
+      image: 'public/couch cleaning.jpg'
     },
     {
       icon: <Truck className="h-12 w-12 text-clean-blue-500" />,
@@ -106,7 +106,7 @@ export const ServicesList = () => {
         'Flexible scheduling including weekends and after hours'
       ],
       path: '/services/truck-wash',
-      image: 'https://images.unsplash.com/photo-1549275301-c9d60945be6b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
+      image: 'public/truck mobile carwash.jpg'
     },
     {
       icon: <SprayCan className="h-12 w-12 text-clean-blue-500" />,
@@ -121,7 +121,7 @@ export const ServicesList = () => {
         'Preparation of surfaces for sealing, staining, or painting'
       ],
       path: '/services/pressure-cleaning',
-      image: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
+      image: 'public/pressure cleaning.jpg'
     },
     {
       icon: <AirVent className="h-12 w-12 text-clean-blue-500" />,
@@ -136,7 +136,7 @@ export const ServicesList = () => {
         'Complete cleaning of all accessible ductwork and HVAC components'
       ],
       path: '/services/duct',
-      image: 'https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
+      image: 'public/DUCT CLEANING.jpg'
     },
     {
       icon: <Home className="h-12 w-12 text-clean-blue-500" />,
@@ -151,7 +151,7 @@ export const ServicesList = () => {
         'Inspection for potential window problems during cleaning'
       ],
       path: '/services/window',
-      image: 'https://images.unsplash.com/photo-1527689638836-411945a2b57c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
+      image: 'public/window cleaning.jpg'
     },
     {
       icon: <Sun className="h-12 w-12 text-clean-blue-500" />,
@@ -166,7 +166,7 @@ export const ServicesList = () => {
         'Professional inspection identifies any potential issues'
       ],
       path: '/services/solar-panel',
-      image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
+      image: 'public/solar panel cleaning.jpg'
     },
     {
       icon: <Flower className="h-12 w-12 text-clean-blue-500" />,
@@ -181,7 +181,7 @@ export const ServicesList = () => {
         'Environmentally responsible practices and products'
       ],
       path: '/services/gardening-pool',
-      image: 'https://images.unsplash.com/photo-1470753323753-3f8091bb0232?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
+      image: 'public/Pool cleaning.jpg'
     }
   ];
 
