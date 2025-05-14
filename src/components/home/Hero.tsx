@@ -1,8 +1,12 @@
+
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
+
 export const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
+  
   useEffect(() => {
     // Animation delay
     const timer = setTimeout(() => {
@@ -10,6 +14,7 @@ export const Hero = () => {
     }, 100);
     return () => clearTimeout(timer);
   }, []);
+  
   return <div className="relative h-screen w-full overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
@@ -31,8 +36,14 @@ export const Hero = () => {
               <Button className="bg-clean-green-500 hover:bg-clean-green-600 text-white px-8 py-6 text-lg rounded-xl hover-float">
                 Book Now
               </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white/10 px-8 py-6 text-lg rounded-xl">
-                Our Services
+              <Button 
+                variant="outline" 
+                className="border-white text-white bg-white/10 hover:bg-white/20 px-8 py-6 text-lg rounded-xl"
+                asChild
+              >
+                <Link to="/services">
+                  Our Services
+                </Link>
               </Button>
             </div>
           </div>
