@@ -1,10 +1,7 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
-
 export const CallToAction = () => {
-  return (
-    <section className="py-20 bg-clean-blue-500 relative overflow-hidden">
+  return <section className="py-20 bg-clean-blue-500 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <svg width="100%" height="100%">
@@ -31,6 +28,5 @@ export const CallToAction = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
