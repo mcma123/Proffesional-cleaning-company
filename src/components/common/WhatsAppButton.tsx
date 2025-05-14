@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { WhatsApp } from 'lucide-react';
+import { MessageCircle } from 'lucide-react';
 
 export const WhatsAppButton = () => {
   // Phone number without any special characters
@@ -24,7 +24,7 @@ export const WhatsAppButton = () => {
         damping: 20
       }}
     >
-      <WhatsApp className="h-6 w-6" />
+      <MessageCircle className="h-6 w-6" />
     </motion.a>
   );
 };

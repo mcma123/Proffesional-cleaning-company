@@ -9,6 +9,7 @@ import {
   Clock,
   Book,
 } from 'lucide-react';
+import LocationMap from './LocationMap';
 
 // Social media icons
 import LinkedInIcon from '../../assets/linkedin.svg';
