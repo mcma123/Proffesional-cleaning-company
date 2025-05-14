@@ -57,6 +57,9 @@ export const Footer = () => {
                 <Link to="/shop" className="text-gray-400 hover:text-clean-green-400 transition-colors">Shop</Link>
               </li>
               <li>
+                <Link to="/cart" className="text-gray-400 hover:text-clean-green-400 transition-colors">Cart</Link>
+              </li>
+              <li>
                 <Link to="/contact" className="text-gray-400 hover:text-clean-green-400 transition-colors">Contact</Link>
               </li>
             </ul>
@@ -67,22 +70,22 @@ export const Footer = () => {
             <h4 className="text-lg font-semibold mb-4 text-white">Our Services</h4>
             <ul className="space-y-2">
               <li>
-                <Link to="/services/home-office" className="text-gray-400 hover:text-clean-green-400 transition-colors">Home/Office Cleaning</Link>
+                <Link to="/services#carpet" className="text-gray-400 hover:text-clean-green-400 transition-colors">Carpet Cleaning</Link>
               </li>
               <li>
-                <Link to="/services/building" className="text-gray-400 hover:text-clean-green-400 transition-colors">Building Cleaning</Link>
+                <Link to="/services#office-chairs" className="text-gray-400 hover:text-clean-green-400 transition-colors">Office Chair Cleaning</Link>
               </li>
               <li>
-                <Link to="/services/commercial" className="text-gray-400 hover:text-clean-green-400 transition-colors">Commercial Cleaning</Link>
+                <Link to="/services#mattress" className="text-gray-400 hover:text-clean-green-400 transition-colors">Mattress Cleaning</Link>
               </li>
               <li>
-                <Link to="/services/window" className="text-gray-400 hover:text-clean-green-400 transition-colors">Window Cleaning</Link>
+                <Link to="/services#curtains" className="text-gray-400 hover:text-clean-green-400 transition-colors">Curtains Cleaning</Link>
               </li>
               <li>
-                <Link to="/services/carwash" className="text-gray-400 hover:text-clean-green-400 transition-colors">Mobile Carwash</Link>
+                <Link to="/services#couches" className="text-gray-400 hover:text-clean-green-400 transition-colors">Couch Cleaning</Link>
               </li>
               <li>
-                <Link to="/services/pressure-cleaning" className="text-gray-400 hover:text-clean-green-400 transition-colors">High Pressure Cleaning</Link>
+                <Link to="/services#truck-wash" className="text-gray-400 hover:text-clean-green-400 transition-colors">Mobile Carwash</Link>
               </li>
             </ul>
           </div>

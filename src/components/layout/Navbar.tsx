@@ -65,8 +65,9 @@ export const Navbar = () => {
             >
               <Search className="h-5 w-5 text-gray-700" />
             </button>
-            <Link to="/shop/cart" className="p-2 rounded-full hover:bg-gray-100 transition-colors">
+            <Link to="/cart" className="p-2 rounded-full hover:bg-gray-100 transition-colors relative">
               <ShoppingCart className="h-5 w-5 text-gray-700" />
+              <span className="absolute -top-1 -right-1 bg-clean-green-500 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">3</span>
             </Link>
             <Button className="bg-clean-green-500 hover:bg-clean-green-600">
               Book Now
@@ -108,7 +109,7 @@ export const Navbar = () => {
                 <Search className="h-5 w-5" />
                 <span>Search</span>
               </Link>
-              <Link to="/shop/cart" className="px-4 py-2 flex items-center space-x-2" onClick={() => setIsOpen(false)}>
+              <Link to="/cart" className="px-4 py-2 flex items-center space-x-2" onClick={() => setIsOpen(false)}>
                 <ShoppingCart className="h-5 w-5" />
                 <span>Cart</span>
               </Link>
