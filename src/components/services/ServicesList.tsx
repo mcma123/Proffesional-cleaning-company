@@ -14,8 +14,9 @@ import {
   Flower 
 } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 
-// Updated service data
+// Updated service data with correct image paths
 export const ServicesList = () => {
   const services = [
     {
@@ -46,7 +47,7 @@ export const ServicesList = () => {
         'Quick drying process minimizes business disruption'
       ],
       path: '/services/office-chairs',
-      image: 'public/office chair cleaning.jpg'
+      image: '/office chair cleaning.jpg'
     },
     {
       icon: <BedDouble className="h-12 w-12 text-clean-blue-500" />,
@@ -61,7 +62,7 @@ export const ServicesList = () => {
         'Extends the useful life of your mattress'
       ],
       path: '/services/mattress',
-      image: 'public/matress cleaning.jpg'
+      image: '/matress cleaning.jpg'
     },
     {
       icon: <Blinds className="h-12 w-12 text-clean-blue-500" />,
@@ -76,7 +77,7 @@ export const ServicesList = () => {
         'Improves room appearance and air quality'
       ],
       path: '/services/curtains',
-      image: 'public/Curtain-Cleaning.jpg'
+      image: '/Curtain-Cleaning.jpg'
     },
     {
       icon: <Sofa className="h-12 w-12 text-clean-blue-500" />,
@@ -91,7 +92,7 @@ export const ServicesList = () => {
         'Improves indoor air quality by removing allergens'
       ],
       path: '/services/couches',
-      image: 'public/couch cleaning.jpg'
+      image: '/couch cleaning.jpg'
     },
     {
       icon: <Truck className="h-12 w-12 text-clean-blue-500" />,
@@ -106,7 +107,7 @@ export const ServicesList = () => {
         'Flexible scheduling including weekends and after hours'
       ],
       path: '/services/truck-wash',
-      image: 'public/truck mobile carwash.jpg'
+      image: '/truck mobile carwash.jpg'
     },
     {
       icon: <SprayCan className="h-12 w-12 text-clean-blue-500" />,
@@ -121,7 +122,7 @@ export const ServicesList = () => {
         'Preparation of surfaces for sealing, staining, or painting'
       ],
       path: '/services/pressure-cleaning',
-      image: 'public/pressure cleaning.jpg'
+      image: '/pressure cleaning.jpg'
     },
     {
       icon: <AirVent className="h-12 w-12 text-clean-blue-500" />,
@@ -136,7 +137,7 @@ export const ServicesList = () => {
         'Complete cleaning of all accessible ductwork and HVAC components'
       ],
       path: '/services/duct',
-      image: 'public/DUCT CLEANING.jpg'
+      image: '/DUCT CLEANING.jpg'
     },
     {
       icon: <Home className="h-12 w-12 text-clean-blue-500" />,
@@ -151,7 +152,7 @@ export const ServicesList = () => {
         'Inspection for potential window problems during cleaning'
       ],
       path: '/services/window',
-      image: 'public/window cleaning.jpg'
+      image: '/window cleaning.jpg'
     },
     {
       icon: <Sun className="h-12 w-12 text-clean-blue-500" />,
@@ -166,7 +167,7 @@ export const ServicesList = () => {
         'Professional inspection identifies any potential issues'
       ],
       path: '/services/solar-panel',
-      image: 'public/solar panel cleaning.jpg'
+      image: '/solar panel cleaning.jpg'
     },
     {
       icon: <Flower className="h-12 w-12 text-clean-blue-500" />,
@@ -181,7 +182,7 @@ export const ServicesList = () => {
         'Environmentally responsible practices and products'
       ],
       path: '/services/gardening-pool',
-      image: 'public/Pool cleaning.jpg'
+      image: '/Pool cleaning.jpg'
     }
   ];
 
@@ -237,18 +238,20 @@ export const ServicesList = () => {
             >
               <Card className="overflow-hidden h-full hover:shadow-xl transition-all duration-300 hover:border-clean-green-300 group">
                 <div className="h-64 relative overflow-hidden">
-                  <img 
-                    src={service.image} 
-                    alt={service.title} 
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
-                    <div className="p-6">
-                      <h3 className="text-3xl font-semibold text-white mb-2">
-                        {service.title}
-                      </h3>
+                  <AspectRatio ratio={16/9} className="w-full h-full">
+                    <img 
+                      src={service.image} 
+                      alt={service.title} 
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                      <div className="p-6">
+                        <h3 className="text-3xl font-semibold text-white mb-2">
+                          {service.title}
+                        </h3>
+                      </div>
                     </div>
-                  </div>
+                  </AspectRatio>
                 </div>
                 
                 <CardContent className="p-6">

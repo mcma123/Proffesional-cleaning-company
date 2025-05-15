@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { 
@@ -14,6 +13,7 @@ import {
   Sun, 
   Flower
 } from 'lucide-react';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 export const Services = () => {
   const services = [
@@ -116,12 +116,14 @@ export const Services = () => {
             >
               <div className="glass-card p-0 h-full hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group-hover:border-clean-green-300 overflow-hidden">
                 <div className="h-48 relative overflow-hidden">
-                  <img 
-                    src={service.image} 
-                    alt={service.title} 
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                  <AspectRatio ratio={4/3} className="w-full h-full">
+                    <img 
+                      src={service.image} 
+                      alt={service.title} 
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                  </AspectRatio>
                 </div>
                 <div className="p-6">
                   <div className="mb-4 rounded-full bg-clean-green-50 p-3 inline-block">
