@@ -27,7 +27,7 @@ export const GalleryCarousel = () => {
       id: 1,
       category: "before-after",
       title: "Kitchen Transformation",
-      src: "https://images.unsplash.com/photo-1582640737179-91a3815b92b1?q=80&w=1080",
+      src: "/deep cleaning before and after.webp",
       alt: "Kitchen before and after cleaning"
     },
     {
@@ -76,7 +76,7 @@ export const GalleryCarousel = () => {
       id: 8,
       category: "commercial",
       title: "Restaurant",
-      src: "https://images.unsplash.com/photo-1613825787113-a4e1e87117e1?q=80&w=1080",
+      src: "/restarant  cleaning sbu.jpg",
       alt: "Clean restaurant"
     },
     {
@@ -90,7 +90,7 @@ export const GalleryCarousel = () => {
       id: 10,
       category: "outdoor",
       title: "Driveway",
-      src: "https://images.unsplash.com/photo-1635771632419-1f9ed027fcee?q=80&w=1080",
+      src: "/driveway sbu.jpg",
       alt: "Clean driveway"
     },
     {

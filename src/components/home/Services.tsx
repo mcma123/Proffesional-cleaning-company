@@ -22,77 +22,77 @@ export const Services = () => {
       title: 'Carpet Cleaning',
       description: 'Deep cleaning for all types of carpets to remove stains, odors, and allergens.',
       path: '/services',
-      image: 'public/vacum cleaning.jpg'
+      image: '/carpet cleaning sbu.jpg'
     },
     {
       icon: <Armchair className="h-12 w-12 text-clean-blue-500" />,
       title: 'Office Chairs',
       description: 'Professional cleaning services for office chairs and furniture.',
       path: '/services',
-      image: 'public/office chair cleaning.jpg'
+      image: '/office chair cleaning.jpg'
     },
     {
       icon: <BedDouble className="h-12 w-12 text-clean-blue-500" />,
       title: 'Mattress Cleaning',
       description: 'Thorough mattress cleaning to remove dust mites, allergens, and stains.',
       path: '/services',
-      image: 'public/matress cleaning.jpg'
+      image: '/matress cleaning.jpg'
     },
     {
       icon: <Blinds className="h-12 w-12 text-clean-blue-500" />,
       title: 'Curtains',
       description: 'Professional cleaning for all types of curtains and drapes.',
       path: '/services',
-      image: 'public/Curtain-Cleaning.jpg'
+      image: '/sbu curtain.jpg'
     },
     {
       icon: <Sofa className="h-12 w-12 text-clean-blue-500" />,
       title: 'Couches',
       description: 'Deep cleaning services for couches and upholstery to remove stains and odors.',
       path: '/services',
-      image: 'public/couch cleaning.jpg'
+      image: '/couch cleaning.jpg'
     },
     {
       icon: <Truck className="h-12 w-12 text-clean-blue-500" />,
       title: 'Truck Mobile Car Wash',
       description: 'Mobile car washing services for trucks and large vehicles.',
       path: '/services',
-      image: 'public/truck mobile carwash.jpg'
+      image: '/car truck sbu wash.jpg'
     },
     {
       icon: <SprayCan className="h-12 w-12 text-clean-blue-500" />,
       title: 'High Pressure Cleaning',
       description: 'Powerful pressure cleaning for driveways, patios, and exterior surfaces.',
       path: '/services',
-      image: 'public/pressure cleaning.jpg'
+      image: '/pressure cleaning.jpg'
     },
     {
       icon: <AirVent className="h-12 w-12 text-clean-blue-500" />,
       title: 'Duct Cleaning',
       description: 'Thorough cleaning of HVAC ducts to improve air quality and efficiency.',
       path: '/services',
-      image: 'public/DUCT CLEANING.jpg'
+      image: '/DUCT CLEANING.jpg'
     },
     {
       icon: <Home className="h-12 w-12 text-clean-blue-500" />,
       title: 'Window Cleaning',
       description: 'Crystal clear window cleaning for residential and commercial properties.',
       path: '/services',
-      image: 'public/window cleaning.jpg'
+      image: '/window cleaning.jpg'
     },
     {
       icon: <Sun className="h-12 w-12 text-clean-blue-500" />,
       title: 'Solar Panel Cleaning',
       description: 'Specialized cleaning for solar panels to maintain optimal efficiency.',
       path: '/services',
-      image: 'public/solar panel cleaning.jpg'
+      image: '/solar panel cleaning.jpg'
     },
     {
       icon: <Flower className="h-12 w-12 text-clean-blue-500" />,
       title: 'Gardening & Pool Cleaning',
       description: 'Professional gardening and pool maintenance services.',
       path: '/services',
-      image: 'public/Pool cleaning.jpg'
+      image: '/Pool cleaning.jpg'
     }
   ];
 

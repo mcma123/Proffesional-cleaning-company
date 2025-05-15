@@ -31,7 +31,7 @@ export const ServicesList = () => {
         'Safe for all types of carpets including wool and delicate fibers'
       ],
       path: '/services/carpet',
-      image: 'public/vacum cleaning.jpg'
+      image: '/vacum cleaning.jpg'
     },
     {
       icon: <Armchair className="h-12 w-12 text-clean-blue-500" />,

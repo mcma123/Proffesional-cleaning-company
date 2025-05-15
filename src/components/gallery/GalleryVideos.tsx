@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Play } from 'lucide-react';
@@ -17,23 +16,23 @@ export const GalleryVideos = () => {
       category: "residential",
       title: "Complete House Deep Cleaning",
       thumbnail: "https://images.unsplash.com/photo-1527689638836-411945a2b57c?q=80&w=640",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      videoUrl: "/videos/couch cleaning sbu.mp4",
       description: "Watch our team transform a family home with our comprehensive deep cleaning service."
     },
     {
       id: 2,
       category: "residential",
-      title: "Carpet Shampooing Process",
+      title: "Pressure Cleaning",
       thumbnail: "https://images.unsplash.com/photo-1558317374-067fb5f30001?q=80&w=640",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      description: "See how we revitalize carpets and remove deep-seated stains and allergens."
+      videoUrl: "videos/presure cleaning sbu.mp4",
+      description: "See how we revitalize furniture and remove deep-seated stains using pressure cleaning."
     },
     {
       id: 3,
-      category: "commercial",
+      category: "residential",
       title: "Office Sanitization Protocol",
       thumbnail: "https://images.unsplash.com/photo-1604328698692-f76ea9498e76?q=80&w=640",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      videoUrl: "videos/gallery video cleaning.mp4",
       description: "Our commercial sanitization process ensures a safe and healthy workplace environment."
     },
     {
@@ -131,17 +130,23 @@ export const GalleryVideos = () => {
                       className="glass-card overflow-hidden"
                       variants={fadeInUp}
                     >
-                      <div className="relative group cursor-pointer h-64">
-                        <img 
-                          src={video.thumbnail} 
-                          alt={video.title}
-                          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                        />
-                        <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/50 transition-colors">
-                          <div className="w-16 h-16 bg-clean-green-500 rounded-full flex items-center justify-center transform group-hover:scale-110 transition-transform">
-                            <Play className="h-8 w-8 text-white fill-current ml-1" />
-                          </div>
-                        </div>
+                      <div className="relative group cursor-pointer h-64 flex items-center justify-center bg-black/10">
+                        {video.videoUrl.startsWith('/videos/') ? (
+                          <video
+                            src={video.videoUrl}
+                            poster={video.thumbnail}
+                            controls
+                            className="w-full h-full object-cover rounded-none"
+                          />
+                        ) : (
+                          <iframe
+                            src={video.videoUrl}
+                            title={video.title}
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                            className="w-full h-full object-cover rounded-none"
+                          />
+                        )}
                       </div>
                       <div className="p-6">
                         <h3 className="text-xl font-semibold mb-2">{video.title}</h3>
