@@ -33,8 +33,13 @@ export const Hero = () => {
               Professional cleaning services with cutting-edge technology and eco-friendly solutions. Experience the difference with our expert team.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-clean-green-500 hover:bg-clean-green-600 text-white px-8 py-6 text-lg rounded-xl hover-float">
-                Book Now
+              <Button 
+                className="bg-clean-green-500 hover:bg-clean-green-600 text-white px-8 py-6 text-lg rounded-xl hover-float"
+                asChild
+              >
+                <Link to="/contact">
+                  Book Now
+                </Link>
               </Button>
               <Button 
                 variant="outline" 
