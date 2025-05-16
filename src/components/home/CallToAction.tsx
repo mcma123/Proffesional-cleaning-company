@@ -1,5 +1,8 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
+
 export const CallToAction = () => {
   return <section className="py-20 bg-clean-blue-500 relative overflow-hidden">
       {/* Background Pattern */}
@@ -19,11 +22,11 @@ export const CallToAction = () => {
             Experience the difference with our professional cleaning services. Book now and enjoy a cleaner, healthier environment.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button className="bg-white text-clean-blue-500 hover:bg-white/90 text-lg px-8 py-6 rounded-xl hover-float">
-              Book a Service
+            <Button asChild className="bg-white text-clean-blue-500 hover:bg-white/90 text-lg px-8 py-6 rounded-xl hover-float">
+              <Link to="/contact">Book a Service</Link>
             </Button>
-            <Button variant="outline" className="border-white text-white hover:bg-white/10 text-lg px-8 py-6 rounded-xl">
-              Contact Us
+            <Button asChild variant="outline" className="border-white text-white hover:bg-white/10 text-lg px-8 py-6 rounded-xl">
+              <Link to="/contact">Contact Us</Link>
             </Button>
           </div>
         </div>

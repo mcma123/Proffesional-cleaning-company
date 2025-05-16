@@ -69,8 +69,8 @@ export const Navbar = () => {
               <ShoppingCart className="h-5 w-5 text-gray-700" />
               <span className="absolute -top-1 -right-1 bg-clean-green-500 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">3</span>
             </Link>
-            <Button className="bg-clean-green-500 hover:bg-clean-green-600">
-              Book Now
+            <Button asChild className="bg-clean-green-500 hover:bg-clean-green-600">
+              <Link to="/contact">Book Now</Link>
             </Button>
           </div>
 
@@ -114,8 +114,8 @@ export const Navbar = () => {
                 <span>Cart</span>
               </Link>
               <div className="px-4 py-2">
-                <Button className="w-full bg-clean-green-500 hover:bg-clean-green-600">
-                  Book Now
+                <Button asChild className="w-full bg-clean-green-500 hover:bg-clean-green-600">
+                  <Link to="/contact">Book Now</Link>
                 </Button>
               </div>
             </div>
