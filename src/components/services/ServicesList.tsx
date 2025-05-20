@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { 
@@ -11,7 +12,8 @@ import {
   AirVent, 
   Home, 
   Sun, 
-  Flower 
+  Flower,
+  GraduationCap
 } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
@@ -183,6 +185,21 @@ export const ServicesList = () => {
       ],
       path: '/services/gardening-pool',
       image: '/Pool cleaning.jpg'
+    },
+    {
+      icon: <GraduationCap className="h-12 w-12 text-clean-blue-500" />,
+      title: 'Training Services',
+      description: 'Professional training programs for carpet cleaning and window cleaning techniques. Learn from industry experts with hands-on experience.',
+      longDescription: 'Our comprehensive training services are designed to equip individuals and small teams with professional-level cleaning skills and knowledge. Led by experienced industry professionals, our hands-on training covers both theoretical and practical aspects of cleaning techniques. We focus on proper equipment usage, chemical safety, efficient cleaning methods, and business operations. Our small class sizes ensure personalized attention and allow for extensive hands-on practice with professional equipment and products.',
+      benefits: [
+        'Hands-on training with professional cleaning equipment',
+        'Learn proper chemical usage, mixing ratios, and safety protocols',
+        'Small class sizes (maximum 3 people) for personalized instruction',
+        'Receive certification upon successful course completion',
+        'Post-training support and guidance for graduates'
+      ],
+      path: '/services/training',
+      image: '/lovable-uploads/f3581cf3-79fe-4168-9d54-597f4ee8bee8.png'
     }
   ];
 
@@ -284,6 +301,60 @@ export const ServicesList = () => {
                     <p className="text-gray-700 mt-6 pt-4 border-t border-gray-100">
                       {service.longDescription}
                     </p>
+
+                    {service.title === 'Training Services' && (
+                      <div className="mt-6 pt-4 border-t border-gray-100 space-y-4">
+                        <div>
+                          <h6 className="text-lg font-semibold text-clean-blue-600">Carpet Cleaning Training</h6>
+                          <p className="font-medium text-clean-green-700">R 1,200 (Maximum 3 people)</p>
+                          <ul className="mt-2 space-y-1">
+                            <li className="flex items-start gap-2">
+                              <div className="rounded-full bg-clean-green-100 p-1 mt-1">
+                                <div className="h-1.5 w-1.5 rounded-full bg-clean-green-500"></div>
+                              </div>
+                              <span>Machine usage and care</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <div className="rounded-full bg-clean-green-100 p-1 mt-1">
+                                <div className="h-1.5 w-1.5 rounded-full bg-clean-green-500"></div>
+                              </div>
+                              <span>Chemical mixing ratios</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <div className="rounded-full bg-clean-green-100 p-1 mt-1">
+                                <div className="h-1.5 w-1.5 rounded-full bg-clean-green-500"></div>
+                              </div>
+                              <span>Identifying carpet types</span>
+                            </li>
+                          </ul>
+                        </div>
+                        
+                        <div>
+                          <h6 className="text-lg font-semibold text-clean-blue-600">Window Cleaning Training</h6>
+                          <p className="font-medium text-clean-green-700">R 800 (Maximum 3 people)</p>
+                          <ul className="mt-2 space-y-1">
+                            <li className="flex items-start gap-2">
+                              <div className="rounded-full bg-clean-green-100 p-1 mt-1">
+                                <div className="h-1.5 w-1.5 rounded-full bg-clean-green-500"></div>
+                              </div>
+                              <span>How to clean windows like a pro</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <div className="rounded-full bg-clean-green-100 p-1 mt-1">
+                                <div className="h-1.5 w-1.5 rounded-full bg-clean-green-500"></div>
+                              </div>
+                              <span>Water pH levels and testing</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <div className="rounded-full bg-clean-green-100 p-1 mt-1">
+                                <div className="h-1.5 w-1.5 rounded-full bg-clean-green-500"></div>
+                              </div>
+                              <span>Chemical usage versus pure water</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </CardContent>
               </Card>

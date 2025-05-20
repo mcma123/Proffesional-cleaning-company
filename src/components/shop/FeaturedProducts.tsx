@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { ShoppingCart, Star, SprayCan, Trash2, Droplets } from 'lucide-react';
+import { ShoppingCart, Star, SprayCan, Trash2, Droplets, GraduationCap } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
@@ -20,6 +20,7 @@ type Product = {
   bestSeller?: boolean;
   eco?: boolean;
   professional?: boolean;
+  training?: boolean;
   inStock: boolean;
 };
 
@@ -161,6 +162,31 @@ const products: Product[] = [
     description: 'Professional-grade mop system for efficient floor cleaning.',
     professional: true,
     inStock: false
+  },
+  
+  // Training Products (New)
+  {
+    id: 'training-1',
+    name: 'Carpet Cleaning Training Course',
+    price: 1200.00,
+    category: 'training',
+    rating: 5.0,
+    image: '/lovable-uploads/f3581cf3-79fe-4168-9d54-597f4ee8bee8.png',
+    description: 'Professional carpet cleaning training for up to 3 people. Learn machine usage, chemical mixing, and carpet identification.',
+    training: true,
+    professional: true,
+    inStock: true
+  },
+  {
+    id: 'training-2',
+    name: 'Window Cleaning Training Course',
+    price: 800.00,
+    category: 'training',
+    rating: 4.9,
+    image: '/window cleaning.jpg',
+    description: 'Learn professional window cleaning techniques including pure water systems, pH testing, and chemical usage.',
+    training: true,
+    inStock: true
   }
 ];
 
@@ -232,6 +258,7 @@ export const FeaturedProducts = () => {
               <TabsTrigger value="specialized" className="px-5">Specialized</TabsTrigger>
               <TabsTrigger value="eco-friendly" className="px-5">Eco-Friendly</TabsTrigger>
               <TabsTrigger value="tools" className="px-5">Tools & Equipment</TabsTrigger>
+              <TabsTrigger value="training" className="px-5">Training</TabsTrigger>
             </TabsList>
           </div>
           
@@ -272,6 +299,11 @@ export const FeaturedProducts = () => {
                               Professional
                             </span>
                           )}
+                          {product.training && (
+                            <span className="bg-blue-600 text-white text-xs font-semibold px-2 py-1 rounded">
+                              Training Course
+                            </span>
+                          )}
                         </div>
                         
                         {/* Category icon - Updated with proper icons */}
@@ -280,6 +312,7 @@ export const FeaturedProducts = () => {
                           {product.category === 'specialized' && <Droplets className="h-5 w-5 text-clean-blue-500" />}
                           {product.category === 'eco-friendly' && <Trash2 className="h-5 w-5 text-green-600" />}
                           {product.category === 'tools' && <ShoppingCart className="h-5 w-5 text-amber-500" />}
+                          {product.category === 'training' && <GraduationCap className="h-5 w-5 text-blue-600" />}
                         </div>
                       </div>
                       
@@ -292,6 +325,11 @@ export const FeaturedProducts = () => {
                         <p className="font-bold text-xl text-clean-green-700">
                           R {product.price.toFixed(2)}
                         </p>
+                        {product.category === 'training' && (
+                          <p className="text-xs font-medium text-gray-500 mt-1">
+                            Maximum 3 participants per session
+                          </p>
+                        )}
                       </CardContent>
                       
                       <CardFooter className="p-6 pt-0">
@@ -301,8 +339,17 @@ export const FeaturedProducts = () => {
                           variant={product.inStock ? "default" : "outline"}
                           disabled={!product.inStock}
                         >
-                          <ShoppingCart className="mr-2 h-4 w-4" /> 
-                          {product.inStock ? 'Add to Cart' : 'Out of Stock'}
+                          {product.category === 'training' ? (
+                            <>
+                              <GraduationCap className="mr-2 h-4 w-4" />
+                              Book Training
+                            </>
+                          ) : (
+                            <>
+                              <ShoppingCart className="mr-2 h-4 w-4" /> 
+                              {product.inStock ? 'Add to Cart' : 'Out of Stock'}
+                            </>
+                          )}
                         </Button>
                       </CardFooter>
                     </Card>

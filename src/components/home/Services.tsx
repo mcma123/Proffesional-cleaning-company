@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { 
@@ -11,7 +12,8 @@ import {
   AirVent, 
   Home, 
   Sun, 
-  Flower
+  Flower,
+  GraduationCap
 } from 'lucide-react';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 
@@ -93,6 +95,13 @@ export const Services = () => {
       description: 'Professional gardening and pool maintenance services.',
       path: '/services',
       image: '/Pool cleaning.jpg'
+    },
+    {
+      icon: <GraduationCap className="h-12 w-12 text-clean-blue-500" />,
+      title: 'Training Services',
+      description: 'Professional training for carpet cleaning and window cleaning techniques.',
+      path: '/services',
+      image: '/lovable-uploads/f3581cf3-79fe-4168-9d54-597f4ee8bee8.png'
     }
   ];
 
