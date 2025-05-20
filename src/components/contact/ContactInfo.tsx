@@ -22,8 +22,8 @@ export const ContactInfo = () => {
     {
       icon: <Phone className="h-5 w-5" />,
       title: 'Phone',
-      info: '+27 71 442 1210',
-      action: 'tel:+27714421210'
+      info: '+27 68 379 5401',
+      action: 'tel:+27683795401'
     },
     {
       icon: <Mail className="h-5 w-5" />,
