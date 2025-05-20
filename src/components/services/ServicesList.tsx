@@ -254,8 +254,8 @@ export const ServicesList = () => {
               variants={itemVariants}
             >
               <Card className="overflow-hidden h-full hover:shadow-xl transition-all duration-300 hover:border-clean-green-300 group">
-                <div className="h-64 relative overflow-hidden">
-                  <AspectRatio ratio={16/9} className="w-full h-full">
+                <div className="relative overflow-hidden">
+                  <AspectRatio ratio={16/9}>
                     <img 
                       src={service.image} 
                       alt={service.title} 

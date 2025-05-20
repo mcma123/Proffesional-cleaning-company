@@ -3,6 +3,7 @@ import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from 'framer-motion';
 import { SprayCan, Trash2, Droplets, ShoppingCart } from 'lucide-react';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 const categories = [
   {
@@ -56,14 +57,16 @@ export const ShopCategories = () => {
             >
               <Card className="overflow-hidden group hover:shadow-lg transition-all duration-300 h-full">
                 <div className="relative overflow-hidden">
-                  <img 
-                    src={category.image} 
-                    alt={category.name}
-                    className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-4">
-                    <h3 className="text-xl font-semibold text-white">{category.name}</h3>
-                  </div>
+                  <AspectRatio ratio={3/2}>
+                    <img 
+                      src={category.image} 
+                      alt={category.name}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-4">
+                      <h3 className="text-xl font-semibold text-white">{category.name}</h3>
+                    </div>
+                  </AspectRatio>
                 </div>
                 <CardContent className="p-6">
                   <div className="flex items-center mb-4">
