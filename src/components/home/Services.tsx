@@ -124,8 +124,8 @@ export const Services = () => {
               className="group"
             >
               <div className="glass-card p-0 h-full hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group-hover:border-clean-green-300 overflow-hidden">
-                <div className="h-48 relative overflow-hidden">
-                  <AspectRatio ratio={4/3} className="w-full h-full">
+                <div className="relative overflow-hidden">
+                  <AspectRatio ratio={16/9} className="w-full">
                     <img 
                       src={service.image} 
                       alt={service.title} 

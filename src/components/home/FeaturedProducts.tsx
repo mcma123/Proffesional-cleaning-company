@@ -3,6 +3,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ShoppingCart, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 export const FeaturedProducts = () => {
   // Mock products (in a real app, these would come from a database or API)
@@ -54,12 +55,14 @@ export const FeaturedProducts = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {products.map((product) => (
             <div key={product.id} className="glass-card overflow-hidden">
-              <div className="relative h-48 overflow-hidden">
-                <img 
-                  src={product.image} 
-                  alt={product.name} 
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
-                />
+              <div className="relative overflow-hidden">
+                <AspectRatio ratio={4/3}>
+                  <img 
+                    src={product.image} 
+                    alt={product.name} 
+                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                  />
+                </AspectRatio>
               </div>
               <div className="p-6">
                 <div className="flex items-center mb-2">

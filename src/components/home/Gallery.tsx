@@ -69,10 +69,10 @@ export const Gallery = () => {
           {galleryItems.map((item) => (
             <motion.div 
               key={item.id}
-              className="relative group h-64 overflow-hidden rounded-xl shadow-lg"
+              className="relative group overflow-hidden rounded-xl shadow-lg"
               whileHover={{ y: -5, transition: { duration: 0.2 } }}
             >
-              <AspectRatio ratio={4/3} className="w-full h-full">
+              <AspectRatio ratio={4/3} className="w-full">
                 <img 
                   src={item.src} 
                   alt={item.alt}
