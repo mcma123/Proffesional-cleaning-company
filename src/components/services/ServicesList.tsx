@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { 
@@ -55,11 +54,10 @@ export const ServicesList = () => {
       icon: <BedDouble className="h-12 w-12 text-clean-blue-500" />,
       title: 'Mattress Cleaning',
       description: 'Thorough mattress cleaning to remove dust mites, allergens, and stains. Improve your sleep quality with a professionally sanitized mattress.',
-      longDescription: 'Our mattress cleaning service addresses the unseen contaminants that accumulate in your bed over time. The average mattress can contain millions of dust mites and significant amounts of dead skin cells, sweat residue, and other allergens. Our multi-step process includes UV sanitization to kill bacteria, powerful extraction to remove allergens, stain treatment, and deodorization. This comprehensive approach not only improves the hygiene of your sleeping environment but can also help alleviate symptoms for allergy and asthma sufferers.',
+      longDescription: 'Our mattress cleaning service addresses the unseen contaminants that accumulate in your bed over time. The average mattress can contain millions of dust mites and significant amounts of dead skin cells, sweat residue, and other allergens. Our multi-step process  kills bacteria with powerful extraction to remove allergens, stain treatment, and deodorization. This comprehensive approach not only improves the hygiene of your sleeping environment but can also help alleviate symptoms for allergy and asthma sufferers.',
       benefits: [
         'Eliminates dust mites and their allergens',
         'Removes stains, sweat residue, and odors',
-        'UV sanitization kills bacteria and other microorganisms',
         'May reduce symptoms for allergy and asthma sufferers',
         'Extends the useful life of your mattress'
       ],
@@ -79,7 +77,7 @@ export const ServicesList = () => {
         'Improves room appearance and air quality'
       ],
       path: '/services/curtains',
-      image: '/Curtain-Cleaning.jpg'
+      image: '/curtain cleaning new.jpg'
     },
     {
       icon: <Sofa className="h-12 w-12 text-clean-blue-500" />,
@@ -194,9 +192,8 @@ export const ServicesList = () => {
       benefits: [
         'Hands-on training with professional cleaning equipment',
         'Learn proper chemical usage, mixing ratios, and safety protocols',
-        'Small class sizes (maximum 3 people) for personalized instruction',
-        'Receive certification upon successful course completion',
-        'Post-training support and guidance for graduates'
+        'Small class sizes (maximum 3 people) for personalized instruction'
+        
       ],
       path: '/services/training',
       image: '/lovable-uploads/f3581cf3-79fe-4168-9d54-597f4ee8bee8.png'
@@ -259,7 +256,7 @@ export const ServicesList = () => {
                     <img 
                       src={service.image} 
                       alt={service.title} 
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
                       <div className="p-6">
