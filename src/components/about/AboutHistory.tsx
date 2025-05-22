@@ -4,7 +4,7 @@ import React from 'react';
 export const AboutHistory = () => {
   const milestones = [
     {
-      year: '2015',
+      year: '2012',
       title: 'Founded',
       description: 'ProClean was established with a vision to revolutionize the cleaning industry.'
     },
@@ -22,11 +22,6 @@ export const AboutHistory = () => {
       year: '2021',
       title: 'Tech Integration',
       description: 'Incorporated advanced cleaning technology and smart scheduling systems.'
-    },
-    {
-      year: '2023',
-      title: 'Industry Award',
-      description: 'Recognized as the leading eco-friendly cleaning service provider in the region.'
     }
   ];
 

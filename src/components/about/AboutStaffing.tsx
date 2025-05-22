@@ -22,7 +22,7 @@ export const AboutStaffing = () => {
                 will be performed at a predetermined rate agreed by both parties.
               </p>
               <p className="text-gray-700 font-medium text-lg">
-                It is the intention of Perfect Carpet Cleaners to provide our clients with a high standard of cleanliness 
+                It is the intention of Professional Cleaning Company to provide our clients with a high standard of cleanliness 
                 and that their needs are met.
               </p>
             </CardContent>
