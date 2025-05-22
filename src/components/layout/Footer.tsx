@@ -73,7 +73,7 @@ export const Footer = () => {
                 <Link to="/services#carpet" className="text-gray-400 hover:text-clean-green-400 transition-colors">Carpet Cleaning</Link>
               </li>
               <li>
-                <Link to="/services#office-chairs" className="text-gray-400 hover:text-clean-green-400 transition-colors">Office Chair Cleaning</Link>
+                <Link to="/services#hotel-cleaning" className="text-gray-400 hover:text-clean-green-400 transition-colors">Hotel Cleaning</Link>
               </li>
               <li>
                 <Link to="/services#mattress" className="text-gray-400 hover:text-clean-green-400 transition-colors">Mattress Cleaning</Link>
@@ -85,7 +85,7 @@ export const Footer = () => {
                 <Link to="/services#couches" className="text-gray-400 hover:text-clean-green-400 transition-colors">Couch Cleaning</Link>
               </li>
               <li>
-                <Link to="/services#truck-wash" className="text-gray-400 hover:text-clean-green-400 transition-colors">Mobile Carwash</Link>
+                <Link to="/services#commercial-dustbin" className="text-gray-400 hover:text-clean-green-400 transition-colors">Commercial Dustbin Washing</Link>
               </li>
             </ul>
           </div>

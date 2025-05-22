@@ -1,8 +1,9 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { 
   Brush, 
-  Armchair, 
+  Hotel, 
   BedDouble, 
   Blinds, 
   Sofa, 
@@ -12,7 +13,8 @@ import {
   Home, 
   Sun, 
   Flower,
-  GraduationCap
+  GraduationCap,
+  Trash
 } from 'lucide-react';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 
@@ -26,9 +28,9 @@ export const Services = () => {
       image: '/carpet cleaning sbu.jpg'
     },
     {
-      icon: <Armchair className="h-12 w-12 text-clean-blue-500" />,
-      title: 'Office Chairs',
-      description: 'Professional cleaning services for office chairs and furniture.',
+      icon: <Hotel className="h-12 w-12 text-clean-blue-500" />,
+      title: 'Hotel Cleaning',
+      description: 'Professional cleaning services for hotels, motels, and hospitality establishments.',
       path: '/services',
       image: '/office chair cleaning.jpg'
     },
@@ -94,6 +96,13 @@ export const Services = () => {
       description: 'Professional gardening and pool maintenance services.',
       path: '/services',
       image: '/Pool cleaning.jpg'
+    },
+    {
+      icon: <Trash className="h-12 w-12 text-clean-blue-500" />,
+      title: 'Commercial Dustbin Washing',
+      description: 'Thorough pressure washing for commercial dustbins and waste containers.',
+      path: '/services',
+      image: '/pressure cleaning.jpg'
     },
     {
       icon: <GraduationCap className="h-12 w-12 text-clean-blue-500" />,
