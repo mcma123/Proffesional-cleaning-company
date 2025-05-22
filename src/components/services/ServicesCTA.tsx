@@ -58,7 +58,7 @@ export const ServicesCTA = () => {
             </div>
             
             <p className="mt-6 text-gray-600">
-              *Satisfaction guaranteed or your money back
+              Perfection is Our Signature
             </p>
           </motion.div>
         </div>

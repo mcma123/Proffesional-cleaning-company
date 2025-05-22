@@ -22,7 +22,7 @@ export const AboutCompany = () => {
             </p>
             <p className="mb-6">
               The company is supported by a strong management team and staff comprising of people with relevant technical skills 
-              and experience. We strive to provide excellent, personalized and quick response cleaning services to satisfy 
+              and experience. We strive to provide excellent, personalised and quick response cleaning services to satisfy 
               the challenging needs of our customers. Based on our experience in the cleaning industry from 2012, 
               PCC have gained a competitive edge in the following areas:
             </p>
@@ -59,7 +59,7 @@ export const AboutCompany = () => {
             </div>
             
             <p>
-              If entrusted with the task of your housekeeping and cleaning services, P VX, as professionals in the cleaning industry, 
+              If entrusted with the task of your housekeeping and cleaning services, Professional Cleaning Company, as professionals in the cleaning industry, 
               will take full responsibility for your cleaning and will ensure that we make our best efforts 
               in meeting your requirements.
             </p>

@@ -12,7 +12,7 @@ export const FeaturedProducts = () => {
       id: 1,
       name: 'Eco-Friendly All-Purpose Cleaner',
       description: 'Natural, non-toxic cleaner for all surfaces.',
-      price: 12.99,
+      price: 199.99,
       rating: 5,
       image: 'https://images.unsplash.com/photo-1606813907291-d86efa9b94db?q=80&w=320'
     },
@@ -20,7 +20,7 @@ export const FeaturedProducts = () => {
       id: 2,
       name: 'Premium Microfiber Cloth Set',
       description: 'Pack of 5 ultra-absorbent microfiber cloths for streak-free cleaning.',
-      price: 15.99,
+      price: 249.99,
       rating: 4,
       image: 'https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?q=80&w=320'
     },
@@ -28,7 +28,7 @@ export const FeaturedProducts = () => {
       id: 3,
       name: 'Industrial Strength Degreaser',
       description: 'Professional-grade degreaser for tough kitchen messes.',
-      price: 19.99,
+      price: 299.99,
       rating: 5,
       image: 'https://images.unsplash.com/photo-1563453392212-326f5e854473?q=80&w=320'
     },
@@ -36,7 +36,7 @@ export const FeaturedProducts = () => {
       id: 4,
       name: 'Glass & Window Cleaner',
       description: 'Streak-free formula for crystal clear windows and mirrors.',
-      price: 9.99,
+      price: 149.99,
       rating: 4,
       image: 'https://images.unsplash.com/photo-1620103667884-0371a77f5641?q=80&w=320'
     }
@@ -76,7 +76,7 @@ export const FeaturedProducts = () => {
                 <h3 className="text-lg font-semibold mb-2">{product.name}</h3>
                 <p className="text-gray-600 text-sm mb-4">{product.description}</p>
                 <div className="flex items-center justify-between">
-                  <span className="text-xl font-bold">${product.price}</span>
+                  <span className="text-xl font-bold">R {product.price.toFixed(2)}</span>
                   <Button size="sm" className="bg-clean-blue-500 hover:bg-clean-blue-600">
                     <ShoppingCart className="h-4 w-4 mr-2" />
                     Add to Cart
