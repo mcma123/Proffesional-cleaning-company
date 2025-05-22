@@ -87,6 +87,9 @@ export const Footer = () => {
               <li>
                 <Link to="/services#commercial-dustbin" className="text-gray-400 hover:text-clean-green-400 transition-colors">Commercial Dustbin Washing</Link>
               </li>
+              <li>
+                <Link to="/services#Mobile-Truck-Wash" className="text-gray-400 hover:text-clean-green-400 transition-colors">Mobile Truck Wash</Link>
+              </li>
             </ul>
           </div>
           

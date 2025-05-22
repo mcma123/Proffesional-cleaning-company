@@ -21,7 +21,7 @@ export const AboutHero = () => {
             About Our Company
           </h1>
           <p className="text-lg md:text-xl text-white/90 mb-8">
-            Transforming spaces with cutting-edge cleaning technology and eco-friendly solutions since 2015
+            Transforming spaces with cutting-edge cleaning technology and eco-friendly solutions since 2012
           </p>
         </div>
       </div>

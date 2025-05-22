@@ -16,7 +16,7 @@ export const AboutCompany = () => {
           
           <div className="prose max-w-none text-gray-700">
             <p className="mb-6">
-              Professional Cleaning Company was founded in 2012 by a well-experienced individual, Sibusiso Mahlangu, 
+              Professional Cleaning Company was founded in 2012 by a well-experienced individual and CEO Mr Sibusiso , 
               who has vast experience in both the cleaning industry. The company was started with a modest amount of capital, 
               and it is growing fast in the evolving industry. It is a BBBEE Level 1 company.
             </p>
