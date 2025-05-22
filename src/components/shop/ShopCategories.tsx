@@ -15,7 +15,7 @@ const categories = [
   },
   {
     id: 'specialized',
-    name: 'Specialized Solutions',
+    name: 'Specialised Solutions',
     icon: <Droplets className="h-8 w-8 text-clean-blue-500" />,
     description: 'Targeted formulas for specific cleaning tasks',
     image: 'https://images.unsplash.com/photo-1585421514738-01798e348b17?q=80&w=1200'
@@ -57,7 +57,7 @@ export const ShopCategories = () => {
             >
               <Card className="overflow-hidden group hover:shadow-lg transition-all duration-300 h-full">
                 <div className="relative overflow-hidden">
-                  <AspectRatio ratio={3/2}>
+                  <AspectRatio ratio={16/9}>
                     <img 
                       src={category.image} 
                       alt={category.name}

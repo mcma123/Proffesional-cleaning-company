@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
@@ -74,12 +75,12 @@ const products: Product[] = [
   },
   {
     id: 'sp-2',
-    name: 'Bathroom Scale & Mold Remover',
+    name: 'Bathroom Scale & Mould Remover',
     price: 159.75,
     category: 'specialized',
     rating: 4.5,
     image: 'https://images.unsplash.com/photo-1626806787461-102c1a7f1c62?q=80&w=600',
-    description: 'Specialized formula for removing bathroom scale, mold and mildew.',
+    description: 'Specialised formula for removing bathroom scale, mould and mildew.',
     inStock: true
   },
   {
@@ -133,12 +134,12 @@ const products: Product[] = [
   // Cleaning Tools & Equipment
   {
     id: 'tool-1',
-    name: 'Professional Microfiber Cloth Set',
+    name: 'Professional Microfibre Cloth Set',
     price: 249.95,
     category: 'tools',
     rating: 4.9,
     image: 'https://images.unsplash.com/photo-1553830591-42e4fd76afdd?q=80&w=600',
-    description: 'Set of 12 premium microfiber cloths for streak-free cleaning.',
+    description: 'Set of 12 premium microfibre cloths for streak-free cleaning.',
     professional: true,
     inStock: true
   },
@@ -255,7 +256,7 @@ export const FeaturedProducts = () => {
             <TabsList>
               <TabsTrigger value="all" className="px-5">All Products</TabsTrigger>
               <TabsTrigger value="all-purpose" className="px-5">All-Purpose</TabsTrigger>
-              <TabsTrigger value="specialized" className="px-5">Specialized</TabsTrigger>
+              <TabsTrigger value="specialized" className="px-5">Specialised</TabsTrigger>
               <TabsTrigger value="eco-friendly" className="px-5">Eco-Friendly</TabsTrigger>
               <TabsTrigger value="tools" className="px-5">Tools & Equipment</TabsTrigger>
               <TabsTrigger value="training" className="px-5">Training</TabsTrigger>
@@ -274,7 +275,7 @@ export const FeaturedProducts = () => {
                   >
                     <Card className="h-full flex flex-col group overflow-hidden">
                       <div className="relative">
-                        <div className="h-60 overflow-hidden">
+                        <div className="h-72 overflow-hidden">
                           <img 
                             src={product.image} 
                             alt={product.name}

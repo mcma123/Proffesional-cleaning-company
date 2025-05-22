@@ -10,21 +10,21 @@ const initialCartItems = [
   {
     id: 1,
     name: 'Eco-Friendly All-Purpose Cleaner',
-    price: 12.99,
+    price: 129.99,
     quantity: 2,
     image: 'https://images.unsplash.com/photo-1556227702-d1e4e7b5c232?auto=format&fit=crop&q=80&w=300'
   },
   {
     id: 2,
-    name: 'Microfiber Cleaning Cloth Set',
-    price: 19.99,
+    name: 'Microfibre Cleaning Cloth Set',
+    price: 199.99,
     quantity: 1,
     image: 'https://images.unsplash.com/photo-1583845112239-97ef1341b271?auto=format&fit=crop&q=80&w=300'
   },
   {
     id: 3,
     name: 'Premium Window Cleaning Kit',
-    price: 34.99,
+    price: 349.99,
     quantity: 1,
     image: 'https://images.unsplash.com/photo-1527689638836-411945a2b57c?auto=format&fit=crop&q=80&w=300'
   }
@@ -48,7 +48,7 @@ export const ShoppingCart = () => {
   };
 
   const subtotal = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-  const tax = subtotal * 0.1; // 10% tax
+  const tax = subtotal * 0.15; // 15% VAT for South Africa
   const total = subtotal + tax;
   
   return (
@@ -88,7 +88,7 @@ export const ShoppingCart = () => {
                         </div>
                         <div className="ml-4 flex-grow">
                           <h3 className="text-lg font-medium">{item.name}</h3>
-                          <p className="text-clean-green-500 font-semibold mt-1">${item.price.toFixed(2)}</p>
+                          <p className="text-clean-green-500 font-semibold mt-1">R {item.price.toFixed(2)}</p>
                         </div>
                         <div className="flex items-center gap-2">
                           <button 
@@ -108,7 +108,7 @@ export const ShoppingCart = () => {
                           </button>
                         </div>
                         <div className="ml-4 text-right">
-                          <p className="font-semibold">${(item.price * item.quantity).toFixed(2)}</p>
+                          <p className="font-semibold">R {(item.price * item.quantity).toFixed(2)}</p>
                           <button 
                             onClick={() => removeItem(item.id)}
                             className="text-red-500 hover:text-red-700 flex items-center gap-1 text-sm mt-1"
@@ -134,11 +134,11 @@ export const ShoppingCart = () => {
                 <div className="space-y-3">
                   <div className="flex justify-between">
                     <span>Subtotal</span>
-                    <span>${subtotal.toFixed(2)}</span>
+                    <span>R {subtotal.toFixed(2)}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span>Tax (10%)</span>
-                    <span>${tax.toFixed(2)}</span>
+                    <span>VAT (15%)</span>
+                    <span>R {tax.toFixed(2)}</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Shipping</span>
@@ -147,7 +147,7 @@ export const ShoppingCart = () => {
                   <div className="border-t border-gray-200 pt-3 mt-3">
                     <div className="flex justify-between font-bold text-lg">
                       <span>Total</span>
-                      <span>${total.toFixed(2)}</span>
+                      <span>R {total.toFixed(2)}</span>
                     </div>
                   </div>
                 </div>
