@@ -102,7 +102,7 @@ export const Services = () => {
       title: 'Commercial Dustbin Washing',
       description: 'Thorough pressure washing for commercial dustbins and waste containers.',
       path: '/services',
-      image: '/pressure cleaning.jpg'
+      image: '/dust bin pressure wash.jpg'
     },
     {
       icon: <GraduationCap className="h-12 w-12 text-clean-blue-500" />,

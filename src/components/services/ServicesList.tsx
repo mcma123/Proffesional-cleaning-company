@@ -130,7 +130,7 @@ export const ServicesList = () => {
       icon: <AirVent className="h-12 w-12 text-clean-blue-500" />,
       title: 'Duct Cleaning',
       description: 'Thorough cleaning of HVAC ducts to improve air quality and system efficiency. Remove dust, allergens, and contaminants from your ventilation system.',
-      longDescription: 'Our comprehensive duct cleaning service improves indoor air quality by removing accumulated contaminants from your HVAC system. Over time, air ducts collect dust, pollen, mold spores, pet dander, and other allergens that are then circulated throughout your home or business. Our process begins with inspection using specialised cameras, followed by thorough cleaning using negative air pressure equipment and specialised brushes. We also clean other components of your HVAC system including the supply and return vents, registers, grilles, diffusers, and coils when accessible.',
+      longDescription: 'Our comprehensive duct cleaning service improves indoor air quality by removing accumulated contaminants from your HVAC system. Over time, air ducts collect dust, pollen, mold spores, pet dander, and other allergens that are then circulated throughout your home or business. ',
       benefits: [
         'Improves indoor air quality by removing circulating contaminants',
         'May reduce symptoms for allergy and asthma sufferers',
@@ -139,7 +139,7 @@ export const ServicesList = () => {
         'Complete cleaning of all accessible ductwork and HVAC components'
       ],
       path: '/services/duct',
-      image: '/DUCT CLEANING.jpg'
+      image: '/dust bin pressure wash.jpg'
     },
     {
       icon: <Home className="h-12 w-12 text-clean-blue-500" />,
