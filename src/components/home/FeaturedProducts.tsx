@@ -34,11 +34,11 @@ export const FeaturedProducts = () => {
     },
     {
       id: 4,
-      name: 'Glass & Window Cleaner',
-      description: 'Streak-free formula for crystal clear windows and mirrors.',
-      price: 149.99,
-      rating: 4,
-      image: 'https://images.unsplash.com/photo-1620103667884-0371a77f5641?q=80&w=320'
+      name: 'Micro Fibre Cloth',
+      description: 'High-quality microfibre cloth for all cleaning purposes.',
+      price: 14.50,
+      rating: 5,
+      image: '/lovable-uploads/88dd7ddf-48b3-4792-aa1a-405366c05cfd.png'
     }
   ];
 
