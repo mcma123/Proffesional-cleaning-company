@@ -11,7 +11,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-clean-green-400 to-clean-blue-400 bg-clip-text text-transparent">ProClean</h3>
+            <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-clean-green-400 to-clean-blue-400 bg-clip-text text-transparent">Professional Cleaning Company</h3>
             <p className="text-gray-400 mb-4">
               The future of cleaning services, providing innovative and eco-friendly solutions for homes and businesses.
             </p>
@@ -125,7 +125,7 @@ export const Footer = () => {
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-clean-green-400 mr-3" />
-                <p className="text-gray-400">info@Proclean.co.za</p>
+                <p className="text-gray-400">info@PCC.co.za</p>
               </div>
               <div className="pt-2">
                 <Button className="w-full bg-clean-green-500 hover:bg-clean-green-600">
