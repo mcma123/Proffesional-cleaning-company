@@ -10,7 +10,7 @@ export const AboutMission = () => {
           <div>
             <h2 className="text-3xl font-bold mb-6 text-gradient">Our Mission</h2>
             <p className="text-gray-700 mb-6">
-              At ProClean, our mission is to revolutionise the cleaning industry by providing 
+              At Professional Cleaning Company, our mission is to revolutionise the cleaning industry by providing 
               environmentally responsible cleaning solutions that protect our planet while delivering 
               exceptional results for our clients.
             </p>
