@@ -125,7 +125,7 @@ export const Footer = () => {
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-clean-green-400 mr-3" />
-                <p className="text-gray-400">info@proclean.com</p>
+                <p className="text-gray-400">info@ProfessionalCleaningCompany.co.za</p>
               </div>
               <div className="pt-2">
                 <Button className="w-full bg-clean-green-500 hover:bg-clean-green-600">
