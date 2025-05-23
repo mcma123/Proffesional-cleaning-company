@@ -23,7 +23,7 @@ export const Footer = () => {
                 className="text-gray-400 hover:text-clean-green-400 transition-colors"
               >
                 <span className="sr-only">Instagram</span>
-                <img src="/src/assets/instagram.svg" alt="Instagram" className="h-6 w-6" />
+                <img src="/instagram.svg" alt="Instagram" className="h-6 w-6" />
               </a>
               <a 
                 href="https://www.tiktok.com/@professionalcleaningc?_t=ZM-8vxnLoGgUYX&_r=1" 
@@ -32,7 +32,7 @@ export const Footer = () => {
                 className="text-gray-400 hover:text-clean-green-400 transition-colors"
               >
                 <span className="sr-only">TikTok</span>
-                <img src="/src/assets/tiktok.svg" alt="TikTok" className="h-6 w-6" />
+                <img src="/tiktok.svg" alt="TikTok" className="h-6 w-6" />
               </a>
               <a 
                 href="https://x.com/pcc_cleanerz?s=21&t=OP2IoKv7_TNix7KZaXLQ9Q" 
@@ -41,7 +41,7 @@ export const Footer = () => {
                 className="text-gray-400 hover:text-clean-green-400 transition-colors"
               >
                 <span className="sr-only">Twitter</span>
-                <img src="/src/assets/x.svg" alt="Twitter" className="h-6 w-6" />
+                <img src="/x.svg" alt="Twitter" className="h-6 w-6" />
               </a>
               <a 
                 href="http://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=sibusiso-m-287a0340" 
@@ -50,7 +50,7 @@ export const Footer = () => {
                 className="text-gray-400 hover:text-clean-green-400 transition-colors"
               >
                 <span className="sr-only">LinkedIn</span>
-                <img src="/src/assets/linkedin.svg" alt="LinkedIn" className="h-6 w-6" />
+                <img src="/linkedin.svg" alt="LinkedIn" className="h-6 w-6" />
               </a>
             </div>
           </div>
