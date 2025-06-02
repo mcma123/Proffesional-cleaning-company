@@ -29,8 +29,8 @@ export const Services = () => {
     },
     {
       icon: <Hotel className="h-12 w-12 text-clean-blue-500" />,
-      title: 'Hotel Cleaning',
-      description: 'Professional cleaning services for hotels, motels, and hospitality establishments.',
+      title: 'Office Cleaning',
+      description: 'Professional cleaning services for Offices, motels, and hospitality establishments.',
       path: '/services',
       image: '/office chair cleaning.jpg'
     },

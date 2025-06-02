@@ -14,8 +14,8 @@ export const GalleryVideos = () => {
     {
       id: 1,
       category: "residential",
-      title: "Complete House Deep Cleaning",
-      thumbnail: "https://images.unsplash.com/photo-1527689638836-411945a2b57c?q=80&w=640",
+      title: "couch cleaning",
+      thumbnail: "/couch cleaning.jpg",
       videoUrl: "/videos/couch cleaning sbu.mp4",
       description: "Watch our team transform a family home with our comprehensive deep cleaning service."
     },
@@ -25,15 +25,15 @@ export const GalleryVideos = () => {
       title: "Pressure Cleaning",
       thumbnail: "https://images.unsplash.com/photo-1558317374-067fb5f30001?q=80&w=640",
       videoUrl: "videos/presure cleaning sbu.mp4",
-      description: "See how we revitalize furniture and remove deep-seated stains using pressure cleaning."
+      description: "See how we revitalise furniture and remove deep-seated stains using pressure cleaning."
     },
     {
       id: 3,
       category: "residential",
-      title: "Office Sanitization Protocol",
+      title: "Tile Cleaning",
       thumbnail: "https://images.unsplash.com/photo-1604328698692-f76ea9498e76?q=80&w=640",
       videoUrl: "videos/gallery video cleaning.mp4",
-      description: "Our commercial sanitization process ensures a safe and healthy workplace environment."
+      description: "Our commercial sanitisation process ensures a safe and healthy workplace environment."
     },
     {
       id: 4,

@@ -39,11 +39,11 @@ export const ServicesList = () => {
     },
     {
       icon: <Hotel className="h-12 w-12 text-clean-blue-500" />,
-      title: 'Hotel Cleaning',
-      description: 'Professional cleaning services for hotels, guesthouses , and hospitality establishments. Ensure a pristine environment for your guests with our specialised hotel cleaning services.',
+      title: 'Office Cleaning',
+      description: 'Professional cleaning services for Offices, guesthouses , and hospitality establishments. Ensure a pristine environment for your guests with our specialised hotel cleaning services.',
       longDescription: 'Our hotel cleaning service provides comprehensive solutions tailored for the hospitality industry. We understand the unique challenges of hotel environments where cleanliness directly impacts guest satisfaction and reviews. Our trained teams handle everything from daily housekeeping to deep cleaning of guest rooms, lobbies, conference areas, and dining facilities. We use hospital-grade disinfectants and specialised equipment to ensure the highest standards of hygiene and presentation.',
       benefits: [
-        'Comprehensive cleaning for all hotel areas including guesthouses  and public spaces',
+        'Comprehensive cleaning for all office areas including guesthouses  and public spaces',
         'Trained staff experienced in hospitality industry standards',
         'Flexible scheduling to minimise disruption to guests',
         'Enhanced disinfection protocols for high-touch surfaces',

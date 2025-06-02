@@ -28,8 +28,8 @@ export const ContactInfo = () => {
     {
       icon: <Mail className="h-5 w-5" />,
       title: 'Email',
-      info: 'info@professionalcleaningco.com',
-      action: 'mailto:info@professionalcleaningco.com'
+      info: 'pcc1cleaning@gmail.com',
+      action: 'mailto:pcc1cleaning@gmail.com'
     },
     {
       icon: <MapPin className="h-5 w-5" />,
