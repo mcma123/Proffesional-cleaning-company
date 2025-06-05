@@ -129,7 +129,7 @@ export const Footer = () => {
               </div>
               <div className="pt-2">
                 <Button className="w-full bg-clean-green-500 hover:bg-clean-green-600">
-                  Book a Service
+                <Link to="/contact">Book a service</Link> 
                 </Button>
               </div>
             </div>
