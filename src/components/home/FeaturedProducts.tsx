@@ -8,14 +8,7 @@ import { AspectRatio } from '@/components/ui/aspect-ratio';
 export const FeaturedProducts = () => {
   // Mock products (in a real app, these would come from a database or API)
   const products = [
-    {
-      id: 1,
-      name: 'Eco-Friendly All-Purpose Cleaner',
-      description: 'Natural, non-toxic cleaner for all surfaces.',
-      price: 199.99,
-      rating: 5,
-      image: 'https://images.unsplash.com/photo-1606813907291-d86efa9b94db?q=80&w=320'
-    },
+    
     {
       id: 2,
       name: 'Premium Microfiber Cloth Set',
