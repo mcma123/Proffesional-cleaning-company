@@ -29,8 +29,8 @@ export const Navbar = () => {
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-white/80 backdrop-blur-md shadow-md'
-          : 'bg-transparent'
+          ? 'bg-white shadow-md'
+          : 'bg-white'
       }`}
     >
       <div className="container mx-auto px-4 py-4">
@@ -92,7 +92,7 @@ export const Navbar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden pt-4 pb-2 glass-card my-2 animate-fade-in">
+          <div className="md:hidden pt-4 pb-2 bg-white shadow-md my-2 animate-fade-in rounded-lg">
             <div className="flex flex-col space-y-4">
               {navLinks.map((link) => (
                 <Link
