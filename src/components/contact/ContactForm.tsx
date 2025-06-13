@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
@@ -17,6 +16,12 @@ import { useForm } from 'react-hook-form';
 import * as z from 'zod';
 import { useToast } from '@/hooks/use-toast';
 import { Mail } from 'lucide-react';
+import emailjs from '@emailjs/browser';
+
+// Initialize EmailJS
+emailjs.init({
+  publicKey: "HaX3jc3hivoRWMv1d",
+});
 
 const formSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters' }),
@@ -40,16 +45,37 @@ export const ContactForm = () => {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    // In a real application, you would handle the form submission here
-    
-    toast({
-      title: "Message Sent!",
-      description: "We've received your message and will contact you soon.",
-    });
-    
-    form.reset();
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      const templateParams = {
+        full_name: values.name,
+        email: values.email,
+        phone: values.phone || 'Not provided',
+        subject: values.subject,
+        message: values.message,
+      };
+
+      await emailjs.send(
+        'service_l1o57hq',
+        'template_txosjpr',
+        templateParams
+      );
+
+      toast({
+        title: "Success!",
+        description: "Your message has been sent successfully.",
+      });
+
+      // Reset form after successful submission
+      form.reset();
+    } catch (error) {
+      console.error('Error sending email:', error);
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again later.",
+        variant: "destructive",
+      });
+    }
   }
 
   return (
