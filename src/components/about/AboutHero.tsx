@@ -7,11 +7,7 @@ export const AboutHero = () => {
       {/* Background with gradient overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-clean-green-600/90 to-clean-blue-600/80 mix-blend-multiply" />
-        <img 
-          src="https://images.unsplash.com/photo-1556911073-38141963c9e0?q=80&w=2500" 
-          alt="Professional cleaning team" 
-          className="w-full h-full object-cover"
-        />
+
       </div>
       
       {/* Content */}

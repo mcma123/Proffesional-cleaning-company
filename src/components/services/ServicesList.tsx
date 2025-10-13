@@ -171,21 +171,7 @@ export const ServicesList = () => {
       path: '/services/solar-panel',
       image: '/solar panel cleaning.jpg'
     },
-    {
-      icon: <Flower className="h-12 w-12 text-clean-blue-500" />,
-      title: 'Gardening & Pool Cleaning',
-      description: 'Professional gardening and pool maintenance services to keep your outdoor spaces beautiful and functional year-round.',
-      longDescription: 'Our comprehensive outdoor maintenance service combines professional gardening and pool cleaning to keep your exterior spaces in perfect condition. Our gardening services include regular lawn mowing, edging, pruning, weeding, fertilisation, and seasonal planting. Our pool maintenance includes water testing and balancing, skimming, vacuuming, filter cleaning, and equipment checks. By combining these services, we provide a convenient one-stop solution for complete outdoor care, saving you time and ensuring consistent quality across all aspects of your outdoor space.',
-      benefits: [
-        'Comprehensive care of all outdoor spaces',
-        'Professional garden design and seasonal planting options',
-        'Complete pool maintenance including water chemistry management',
-        'Regular scheduled service with consistent quality',
-        'Environmentally responsible practices and products'
-      ],
-      path: '/services/gardening-pool',
-      image: '/Pool cleaning.jpg'
-    },
+
     {
       icon: <Trash className="h-12 w-12 text-clean-blue-500" />,
       title: 'Commercial Dustbin Washing',

@@ -17,7 +17,7 @@ export const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="https://www.instagram.com/pcc_cleaners?igsh=MTdvOWRyN3VtZDY1eA%3D%3D&utm_source=qr" 
+                href="https://www.instagram.com/carpet_cleanerz?igsh=MTdvOWRyN3VtZDY1eA%3D%3D&utm_source=qr" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-clean-green-400 transition-colors"
@@ -26,7 +26,7 @@ export const Footer = () => {
                 <img src="/instagram.svg" alt="Instagram" className="h-6 w-6" />
               </a>
               <a 
-                href="https://www.tiktok.com/@professionalcleaningc?_t=ZM-8vxnLoGgUYX&_r=1" 
+                href="https://www.tiktok.com/@carpetcleaners_pro?_t=ZS-90M9rfoxuDa&_r=1" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-clean-green-400 transition-colors"
@@ -74,9 +74,7 @@ export const Footer = () => {
               <li>
                 <Link to="/shop" className="text-gray-400 hover:text-clean-green-400 transition-colors">Shop</Link>
               </li>
-              <li>
-                <Link to="/cart" className="text-gray-400 hover:text-clean-green-400 transition-colors">Cart</Link>
-              </li>
+
               <li>
                 <Link to="/contact" className="text-gray-400 hover:text-clean-green-400 transition-colors">Contact</Link>
               </li>

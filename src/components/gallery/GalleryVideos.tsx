@@ -35,30 +35,8 @@ export const GalleryVideos = () => {
       videoUrl: "videos/gallery video cleaning.mp4",
       description: "Our commercial sanitisation process ensures a safe and healthy workplace environment."
     },
-    {
-      id: 4,
-      category: "commercial",
-      title: "Retail Store Overnight Cleaning",
-      thumbnail: "https://images.unsplash.com/photo-1613825787113-a4e1e87117e1?q=80&w=640",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      description: "Behind-the-scenes look at our retail cleaning service working through the night."
-    },
-    {
-      id: 5,
-      category: "specialized",
-      title: "High-Pressure Driveway Cleaning",
-      thumbnail: "https://images.unsplash.com/photo-1635771632419-1f9ed027fcee?q=80&w=640",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      description: "Witness the satisfying transformation as we restore driveways to like-new condition."
-    },
-    {
-      id: 6,
-      category: "specialized",
-      title: "Window Cleaning at Heights",
-      thumbnail: "https://images.unsplash.com/photo-1521747116042-5a810fda9664?q=80&w=640",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      description: "Our professional team safely cleaning exterior windows on high-rise buildings."
-    },
+
+
   ];
   
   const fadeInUp = {

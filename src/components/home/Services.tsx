@@ -90,13 +90,7 @@ export const Services = () => {
       path: '/services',
       image: '/solar panel cleaning.jpg'
     },
-    {
-      icon: <Flower className="h-12 w-12 text-clean-blue-500" />,
-      title: 'Gardening & Pool Cleaning',
-      description: 'Professional gardening and pool maintenance services.',
-      path: '/services',
-      image: '/Pool cleaning.jpg'
-    },
+
     {
       icon: <Trash className="h-12 w-12 text-clean-blue-500" />,
       title: 'Commercial Dustbin Washing',

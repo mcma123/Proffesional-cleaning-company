@@ -9,7 +9,7 @@ import AdminPage from "./pages/AdminPage";
 import ServicesPage from "./pages/ServicesPage";
 import GalleryPage from "./pages/GalleryPage";
 import ShopPage from "./pages/ShopPage";
-import CartPage from "./pages/CartPage";
+
 import ContactPage from "./pages/ContactPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import AboutPage from "./pages/AboutPage";
@@ -29,7 +29,7 @@ const App = () => (
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/shop" element={<ShopPage />} />
-          <Route path="/cart" element={<CartPage />} />
+
           <Route path="/contact" element={<ContactPage />} />
           
           {/* Admin Routes */}
