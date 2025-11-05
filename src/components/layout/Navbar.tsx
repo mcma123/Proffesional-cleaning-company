@@ -38,9 +38,9 @@ export const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img 
-              src="/lovable-uploads/dd79e2ab-40e5-4f41-8d79-9e242cf7c495.png" 
+              src="/new logo proclean.jpg" 
               alt="Professional Cleaning Company" 
-              className="h-14 w-auto mr-2"
+              className="h-20 md:h-24 lg:h-28 w-auto mr-2 object-contain"
             />
           </Link>
 
