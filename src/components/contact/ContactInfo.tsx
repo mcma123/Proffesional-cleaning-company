@@ -22,14 +22,14 @@ export const ContactInfo = () => {
     {
       icon: <Phone className="h-5 w-5" />,
       title: 'Phone',
-      info: '+27 68 379 5401',
-      action: 'tel:+27683795401'
+      info: '0714421210',
+      action: 'tel:0714421210'
     },
     {
       icon: <Mail className="h-5 w-5" />,
       title: 'Email',
-      info: 'sibusiso@professionalcleaning.co.za',
-      action: 'mailto:sibusiso@professionalcleaning.co.za'
+      info: 'info@professionalcleaning.co.za',
+      action: 'mailto:info@professionalcleaning.co.za'
     },
     {
       icon: <MapPin className="h-5 w-5" />,
